@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334129ACDB6C00DD16EC /* AppDelegate.swift */; };
 		17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */; };
-		17DC334629ACDB6C00DD16EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334529ACDB6C00DD16EC /* ViewController.swift */; };
 		17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC334A29ACDB6D00DD16EC /* Assets.xcassets */; };
 		17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC334C29ACDB6D00DD16EC /* LaunchScreen.storyboard */; };
+		17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */; };
+		17DC335C29ACDED900DD16EC /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */; };
+		17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */; };
+		17DC336029ACDF1500DD16EC /* KitaplarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */; };
+		17DC336329ACE40400DD16EC /* SonTestleriCozButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17DC333E29ACDB6C00DD16EC /* SurucuEhliyeti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurucuEhliyeti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DC334129ACDB6C00DD16EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17DC334529ACDB6C00DD16EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17DC334A29ACDB6D00DD16EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DC334D29ACDB6D00DD16EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DC334F29ACDB6D00DD16EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
+		17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitaplarViewController.swift; sourceTree = "<group>"; };
+		17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonTestleriCozButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		17DC334029ACDB6C00DD16EC /* SurucuEhliyeti */ = {
 			isa = PBXGroup;
 			children = (
-				17DC334129ACDB6C00DD16EC /* AppDelegate.swift */,
-				17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */,
-				17DC334529ACDB6C00DD16EC /* ViewController.swift */,
+				17DC336129ACE3B800DD16EC /* View */,
+				17DC335829ACDD3E00DD16EC /* Controllers */,
+				17DC335529ACDC2800DD16EC /* Resources */,
 				17DC334A29ACDB6D00DD16EC /* Assets.xcassets */,
 				17DC334C29ACDB6D00DD16EC /* LaunchScreen.storyboard */,
 				17DC334F29ACDB6D00DD16EC /* Info.plist */,
 			);
 			path = SurucuEhliyeti;
+			sourceTree = "<group>";
+		};
+		17DC335529ACDC2800DD16EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */,
+				17DC334129ACDB6C00DD16EC /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		17DC335829ACDD3E00DD16EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17DC335A29ACDD4B00DD16EC /* General */,
+				17DC335929ACDD4600DD16EC /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17DC335929ACDD4600DD16EC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */,
+				17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */,
+				17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */,
+				17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		17DC335A29ACDD4B00DD16EC /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		17DC336129ACE3B800DD16EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DC334629ACDB6C00DD16EC /* ViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
+				17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */,
+				17DC336329ACE40400DD16EC /* SonTestleriCozButton.swift in Sources */,
+				17DC336029ACDF1500DD16EC /* KitaplarViewController.swift in Sources */,
+				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
+				17DC335C29ACDED900DD16EC /* AnaSayfaViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
