@@ -6,15 +6,15 @@
 //
 
 import UIKit
-
-class SonTestleriCozButton: UIView {
+class SonTestleriCozButton: UIButton {
     
     private let sonTestleriCozButton : UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Son Testleri Çöz", for: .normal)
-        button.backgroundColor = .green
-        
+        button.backgroundColor = .black
+        button.layer.cornerRadius = 10
+        button.titleLabel?.textColor = .black        
         return button
     }()
 
@@ -22,15 +22,16 @@ class SonTestleriCozButton: UIView {
         super.init(frame: frame)
         addSubview(sonTestleriCozButton)
         
-        applyConstraints()
+        //applyConstraints()
     }
     
     private func applyConstraints() {
         
             let sonTestleriCozButtonConstraints = [
-                sonTestleriCozButton.topAnchor.constraint(equalTo: topAnchor),
-                sonTestleriCozButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-                sonTestleriCozButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+                sonTestleriCozButton.topAnchor.constraint(equalTo: topAnchor,constant: 100),
+                sonTestleriCozButton.trailingAnchor.constraint(equalTo: trailingAnchor),
+                sonTestleriCozButton.leadingAnchor.constraint(equalTo: leadingAnchor),
+                sonTestleriCozButton.bottomAnchor.constraint(equalTo: bottomAnchor)
             ]
             
             NSLayoutConstraint.activate(sonTestleriCozButtonConstraints)
@@ -38,7 +39,6 @@ class SonTestleriCozButton: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         sonTestleriCozButton.frame = bounds
-        
     }
     required init?(coder: NSCoder) {
         fatalError()

@@ -8,43 +8,46 @@
 import UIKit
 
 class AnaSayfaViewController: UIViewController {
-    
-    private var sonTestleriCozButton : SonTestleriCozButton?
-    
-    
-    
-    private let testleriCözButton : UIButton = {
-       let button = UIButton()
-        button.automaticallyUpdatesConfiguration = false
-        button.setTitle("Son Testleri Çöz", for: .normal)
-        //button.layer.masksToBounds = true
+        
+    private let cikmisSorularButton : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Çıkmış Sorular", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.backgroundColor = .black
+        button.layer.cornerRadius = 10
+        button.titleLabel?.textColor = .black
         return button
     }()
-    
-    
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
-        sonTestleriCozButton = SonTestleriCozButton(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 100))
+        cikmisSorularButton.addTarget(self, action: #selector(cikmisSorularButtonTapped(_ :)), for: .touchUpInside)
                 
-        view.addSubview(sonTestleriCozButton!)
-        
-        
-        
-        
+        view.addSubview(cikmisSorularButton)
+        applyConstraints()
     }
     
+    private func applyConstraints() {
+        
+            let cikmisSorularButtonConstraints = [
+                cikmisSorularButton.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
+                cikmisSorularButton.widthAnchor.constraint(equalToConstant: (view.bounds.width/2)-40 ),
+                cikmisSorularButton.heightAnchor.constraint(equalToConstant: 100),
+                cikmisSorularButton.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20)
+            ]
+            
+            NSLayoutConstraint.activate(cikmisSorularButtonConstraints)
+    }
     
-    
-    
-    
-    
-    
+    @objc func cikmisSorularButtonTapped(_ : UIButton){
+        print("son testleri çöz buton tiklandi")
+        
+        let testVC = TestViewController()
+        navigationController?.pushViewController(testVC, animated: true)
+    }
     
 }

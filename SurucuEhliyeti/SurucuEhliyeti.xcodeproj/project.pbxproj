@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */; };
+		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
+		17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */; };
+		17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDE29E2FF56009EDA46 /* FirebaseAuth */; };
+		17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */; };
+		17948FE329E2FF56009EDA46 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE229E2FF56009EDA46 /* FirebaseDatabase */; };
+		17948FE529E2FF56009EDA46 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE429E2FF56009EDA46 /* FirebaseFirestore */; };
+		17948FE729E2FF56009EDA46 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE629E2FF56009EDA46 /* FirebaseStorage */; };
+		17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */; };
+		17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */; };
+		17CBD90A29AE1154006F2FBF /* myButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CBD90929AE1154006F2FBF /* myButton.swift */; };
+		17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */; };
+		17CE466529E06058002369E8 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE466429E06058002369E8 /* MyViewController.swift */; };
+		17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D266E529E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift */; };
+		17D266E829E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D266E629E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib */; };
 		17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334129ACDB6C00DD16EC /* AppDelegate.swift */; };
 		17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */; };
 		17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC334A29ACDB6D00DD16EC /* Assets.xcassets */; };
@@ -14,11 +29,20 @@
 		17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */; };
 		17DC335C29ACDED900DD16EC /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */; };
 		17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */; };
-		17DC336029ACDF1500DD16EC /* KitaplarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */; };
+		17DC336029ACDF1500DD16EC /* DersNotlari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335F29ACDF1500DD16EC /* DersNotlari.swift */; };
 		17DC336329ACE40400DD16EC /* SonTestleriCozButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnaSayfaStroyBoard.storyboard; sourceTree = "<group>"; };
+		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriViewController.swift; sourceTree = "<group>"; };
+		17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriViewController.xib; sourceTree = "<group>"; };
+		17CBD90929AE1154006F2FBF /* myButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myButton.swift; sourceTree = "<group>"; };
+		17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		17CE466429E06058002369E8 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		17D266E529E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikIsaretleriViewController.swift; sourceTree = "<group>"; };
+		17D266E629E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafikIsaretleriViewController.xib; sourceTree = "<group>"; };
 		17DC333E29ACDB6C00DD16EC /* SurucuEhliyeti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurucuEhliyeti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DC334129ACDB6C00DD16EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +52,7 @@
 		17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
-		17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitaplarViewController.swift; sourceTree = "<group>"; };
+		17DC335F29ACDF1500DD16EC /* DersNotlari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DersNotlari.swift; sourceTree = "<group>"; };
 		17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonTestleriCozButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,12 +61,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */,
+				17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */,
+				17948FE329E2FF56009EDA46 /* FirebaseDatabase in Frameworks */,
+				17948FE529E2FF56009EDA46 /* FirebaseFirestore in Frameworks */,
+				17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */,
+				17948FE729E2FF56009EDA46 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1754BAED29E2C7CF00766776 /* DersNotlari */ = {
+			isa = PBXGroup;
+			children = (
+				17D266E429E2FBC50076A4FB /* PolisIsaretleri */,
+				17D266E329E2FBBC0076A4FB /* TrafikIsaretleri */,
+			);
+			path = DersNotlari;
+			sourceTree = "<group>";
+		};
+		17D266E329E2FBBC0076A4FB /* TrafikIsaretleri */ = {
+			isa = PBXGroup;
+			children = (
+				17D266E529E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift */,
+				17D266E629E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib */,
+			);
+			path = TrafikIsaretleri;
+			sourceTree = "<group>";
+		};
+		17D266E429E2FBC50076A4FB /* PolisIsaretleri */ = {
+			isa = PBXGroup;
+			children = (
+				17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */,
+				17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */,
+			);
+			path = PolisIsaretleri;
+			sourceTree = "<group>";
+		};
 		17DC333529ACDB6C00DD16EC = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +122,11 @@
 				17DC336129ACE3B800DD16EC /* View */,
 				17DC335829ACDD3E00DD16EC /* Controllers */,
 				17DC335529ACDC2800DD16EC /* Resources */,
-				17DC334A29ACDB6D00DD16EC /* Assets.xcassets */,
 				17DC334C29ACDB6D00DD16EC /* LaunchScreen.storyboard */,
+				1754BAF029E2CE0600766776 /* GoogleService-Info.plist */,
+				17DC334A29ACDB6D00DD16EC /* Assets.xcassets */,
 				17DC334F29ACDB6D00DD16EC /* Info.plist */,
+				1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */,
 			);
 			path = SurucuEhliyeti;
 			sourceTree = "<group>";
@@ -96,7 +155,7 @@
 				17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */,
 				17DC335B29ACDED900DD16EC /* AnaSayfaViewController.swift */,
 				17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */,
-				17DC335F29ACDF1500DD16EC /* KitaplarViewController.swift */,
+				17DC335F29ACDF1500DD16EC /* DersNotlari.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -104,6 +163,8 @@
 		17DC335A29ACDD4B00DD16EC /* General */ = {
 			isa = PBXGroup;
 			children = (
+				17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */,
+				17CE466429E06058002369E8 /* MyViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -111,7 +172,9 @@
 		17DC336129ACE3B800DD16EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1754BAED29E2C7CF00766776 /* DersNotlari */,
 				17DC336229ACE40400DD16EC /* SonTestleriCozButton.swift */,
+				17CBD90929AE1154006F2FBF /* myButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +195,14 @@
 			dependencies = (
 			);
 			name = SurucuEhliyeti;
+			packageProductDependencies = (
+				17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */,
+				17948FDE29E2FF56009EDA46 /* FirebaseAuth */,
+				17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */,
+				17948FE229E2FF56009EDA46 /* FirebaseDatabase */,
+				17948FE429E2FF56009EDA46 /* FirebaseFirestore */,
+				17948FE629E2FF56009EDA46 /* FirebaseStorage */,
+			);
 			productName = SurucuEhliyeti;
 			productReference = 17DC333E29ACDB6C00DD16EC /* SurucuEhliyeti.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 17DC333529ACDB6C00DD16EC;
+			packageReferences = (
+				17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 17DC333F29ACDB6C00DD16EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,7 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */,
+				17D266E829E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib in Resources */,
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
+				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
+				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,12 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */,
+				17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */,
 				17DC336329ACE40400DD16EC /* SonTestleriCozButton.swift in Sources */,
-				17DC336029ACDF1500DD16EC /* KitaplarViewController.swift in Sources */,
+				17DC336029ACDF1500DD16EC /* DersNotlari.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17DC335C29ACDED900DD16EC /* AnaSayfaViewController.swift in Sources */,
+				17CBD90A29AE1154006F2FBF /* myButton.swift in Sources */,
+				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
+				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +483,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		17948FDE29E2FF56009EDA46 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		17948FE229E2FF56009EDA46 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		17948FE429E2FF56009EDA46 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		17948FE629E2FF56009EDA46 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17948FDB29E2FF56009EDA46 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17DC333629ACDB6C00DD16EC /* Project object */;
 }

@@ -13,16 +13,16 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         let viewController1 = UINavigationController(rootViewController: AnaSayfaViewController())
-        let viewController2 = UINavigationController(rootViewController: ProfilViewController())
-        let viewController3 = UINavigationController(rootViewController: KitaplarViewController())
+        let viewController2 = UINavigationController(rootViewController: DersNotlari())
+        let viewController3 = UINavigationController(rootViewController: ProfilViewController())
         
         viewController1.tabBarItem.image = UIImage(systemName: "house")
-        viewController2.tabBarItem.image = UIImage(systemName: "play.circle")
+        viewController2.tabBarItem.image = UIImage(systemName: "book")
         viewController3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         
-        viewController1.title = "Home"
-        viewController2.title = "Coming Soon"
-        viewController3.title = "Top Search"
+        viewController1.title = "Testler"
+        viewController2.title = "Ders Notları"
+        viewController3.title = "Profil"
         
         tabBar.tintColor = .label
         
