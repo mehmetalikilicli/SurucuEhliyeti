@@ -13,7 +13,7 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         let viewController1 = UINavigationController(rootViewController: AnaSayfaViewController())
-        let viewController2 = UINavigationController(rootViewController: DersNotlari())
+        let viewController2 = UINavigationController(rootViewController: DersNotlariViewController())
         let viewController3 = UINavigationController(rootViewController: ProfilViewController())
         
         viewController1.tabBarItem.image = UIImage(systemName: "house")
