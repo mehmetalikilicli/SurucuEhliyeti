@@ -11,8 +11,6 @@ class DersNotlariViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // deneme yorum satiri
     }
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
