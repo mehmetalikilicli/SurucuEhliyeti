@@ -11,5 +11,6 @@ class PolisIsaretleriViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 }

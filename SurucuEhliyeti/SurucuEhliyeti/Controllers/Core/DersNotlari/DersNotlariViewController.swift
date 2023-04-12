@@ -8,27 +8,20 @@
 import UIKit
 
 class DersNotlariViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
-        let trafikIsaretleriVC = TrafikIsaretleriViewController()
-        self.navigationController?.pushViewController(trafikIsaretleriVC, animated: true)
-        
         print("trafikIsaretleriButton  tiklandi.")
     }
     
     @IBAction func polisIsaretleriButton(_ sender: Any) {
-        let polisIsaretleriVC = PolisIsaretleriViewController()
-        self.navigationController?.pushViewController(polisIsaretleriVC, animated: true)
         print("polisIsaretleriButton  tiklandi.")
     }
     
     @IBAction func AGPIButton(_ sender: Any) {
-        let aracGostergePaneliVC = AGPIViewController()
-        self.navigationController?.pushViewController(aracGostergePaneliVC, animated: true)
         print("AGPIButton tiklandi.")
     }
     
