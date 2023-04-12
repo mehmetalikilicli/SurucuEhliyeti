@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */; };
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
+		177377F329E6C11B00DC1BFA /* AGPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177377F129E6C11B00DC1BFA /* AGPIViewController.swift */; };
+		177377F429E6C11B00DC1BFA /* AGPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177377F229E6C11B00DC1BFA /* AGPIViewController.xib */; };
 		17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */; };
 		17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDE29E2FF56009EDA46 /* FirebaseAuth */; };
 		17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */; };
@@ -31,11 +33,14 @@
 		17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636829E4C72200877988 /* DersNotlariViewController.xib */; };
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
+		17F662CE29E5A3C10045A0B5 /* AracGöstergePaneliVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F662CD29E5A3C10045A0B5 /* AracGöstergePaneliVeri.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnaSayfaStroyBoard.storyboard; sourceTree = "<group>"; };
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		177377F129E6C11B00DC1BFA /* AGPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPIViewController.swift; sourceTree = "<group>"; };
+		177377F229E6C11B00DC1BFA /* AGPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGPIViewController.xib; sourceTree = "<group>"; };
 		17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriViewController.swift; sourceTree = "<group>"; };
 		17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriViewController.xib; sourceTree = "<group>"; };
 		17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		17DC636829E4C72200877988 /* DersNotlariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DersNotlariViewController.xib; sourceTree = "<group>"; };
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
+		17F662CD29E5A3C10045A0B5 /* AracGöstergePaneliVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AracGöstergePaneliVeri.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +82,20 @@
 		1754BAED29E2C7CF00766776 /* DersNotlari */ = {
 			isa = PBXGroup;
 			children = (
-				17D266E429E2FBC50076A4FB /* PolisIsaretleri */,
 				17D266E329E2FBBC0076A4FB /* TrafikIsaretleri */,
+				17D266E429E2FBC50076A4FB /* PolisIsaretleri */,
+				177377F029E6C0FA00DC1BFA /* AGPI */,
 			);
 			path = DersNotlari;
+			sourceTree = "<group>";
+		};
+		177377F029E6C0FA00DC1BFA /* AGPI */ = {
+			isa = PBXGroup;
+			children = (
+				177377F129E6C11B00DC1BFA /* AGPIViewController.swift */,
+				177377F229E6C11B00DC1BFA /* AGPIViewController.xib */,
+			);
+			path = AGPI;
 			sourceTree = "<group>";
 		};
 		17D266E329E2FBBC0076A4FB /* TrafikIsaretleri */ = {
@@ -119,6 +135,7 @@
 		17DC334029ACDB6C00DD16EC /* SurucuEhliyeti */ = {
 			isa = PBXGroup;
 			children = (
+				17F662CC29E5A36C0045A0B5 /* Veriler */,
 				17DC336129ACE3B800DD16EC /* View */,
 				17DC335829ACDD3E00DD16EC /* Controllers */,
 				17DC335529ACDC2800DD16EC /* Resources */,
@@ -193,6 +210,14 @@
 				17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */,
 			);
 			path = AnaSayfa;
+			sourceTree = "<group>";
+		};
+		17F662CC29E5A36C0045A0B5 /* Veriler */ = {
+			isa = PBXGroup;
+			children = (
+				17F662CD29E5A3C10045A0B5 /* AracGöstergePaneliVeri.swift */,
+			);
+			path = Veriler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +297,7 @@
 				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
+				177377F429E6C11B00DC1BFA /* AGPIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +311,8 @@
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
+				177377F329E6C11B00DC1BFA /* AGPIViewController.swift in Sources */,
+				17F662CE29E5A3C10045A0B5 /* AracGöstergePaneliVeri.swift in Sources */,
 				17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */,
 				17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
