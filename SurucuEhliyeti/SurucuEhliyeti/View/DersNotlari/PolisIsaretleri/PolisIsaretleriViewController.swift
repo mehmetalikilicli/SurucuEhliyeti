@@ -11,6 +11,6 @@ class PolisIsaretleriViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+// yorum satırı eklendi
     }
 }
