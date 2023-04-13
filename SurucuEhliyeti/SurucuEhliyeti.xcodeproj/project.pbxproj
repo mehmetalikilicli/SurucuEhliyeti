@@ -26,11 +26,12 @@
 		17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC334A29ACDB6D00DD16EC /* Assets.xcassets */; };
 		17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC334C29ACDB6D00DD16EC /* LaunchScreen.storyboard */; };
 		17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */; };
-		17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */; };
 		17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636729E4C72200877988 /* DersNotlariViewController.swift */; };
 		17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636829E4C72200877988 /* DersNotlariViewController.xib */; };
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
+		7AD6E09129E80B5A00D139DD /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6E08F29E80B5A00D139DD /* ProfilViewController.swift */; };
+		7AD6E09229E80B5A00D139DD /* ProfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6E09029E80B5A00D139DD /* ProfilViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +50,12 @@
 		17DC334D29ACDB6D00DD16EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DC334F29ACDB6D00DD16EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		17DC636729E4C72200877988 /* DersNotlariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DersNotlariViewController.swift; sourceTree = "<group>"; };
 		17DC636829E4C72200877988 /* DersNotlariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DersNotlariViewController.xib; sourceTree = "<group>"; };
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
+		7AD6E08F29E80B5A00D139DD /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		7AD6E09029E80B5A00D139DD /* ProfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +157,6 @@
 				17DC636B29E4DBD400877988 /* AnaSayfa */,
 				17DC636629E4C71200877988 /* DersNotlari */,
 				17DC335629ACDCA200DD16EC /* MainTabBarViewController.swift */,
-				17DC335D29ACDEF500DD16EC /* ProfilViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -182,6 +183,8 @@
 			children = (
 				17DC636729E4C72200877988 /* DersNotlariViewController.swift */,
 				17DC636829E4C72200877988 /* DersNotlariViewController.xib */,
+				7AD6E08F29E80B5A00D139DD /* ProfilViewController.swift */,
+				7AD6E09029E80B5A00D139DD /* ProfilViewController.xib */,
 			);
 			path = DersNotlari;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				17D266E829E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib in Resources */,
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
 				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
+				7AD6E09229E80B5A00D139DD /* ProfilViewController.xib in Resources */,
 				17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */,
 				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
@@ -285,10 +289,10 @@
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
-				17DC335E29ACDEF500DD16EC /* ProfilViewController.swift in Sources */,
 				17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
+				7AD6E09129E80B5A00D139DD /* ProfilViewController.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,

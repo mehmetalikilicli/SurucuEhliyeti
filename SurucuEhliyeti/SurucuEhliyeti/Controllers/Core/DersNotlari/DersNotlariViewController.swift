@@ -9,8 +9,22 @@ import UIKit
 
 class DersNotlariViewController: UIViewController {
 
+    
+    
+    
+    
+    
+    @IBOutlet weak var trafikIsaretleriButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        trafikIsaretleriButton.layer.cornerRadius = 12
     }
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
