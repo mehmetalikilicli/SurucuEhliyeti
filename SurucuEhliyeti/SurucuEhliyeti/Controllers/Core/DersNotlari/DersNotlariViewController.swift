@@ -22,6 +22,8 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func AGPIButton(_ sender: Any) {
+        let AGPIVC = AGPIViewController()
+        self.navigationController?.pushViewController(AGPIVC, animated: true)
         print("AGPIButton tiklandi.")
     }
     

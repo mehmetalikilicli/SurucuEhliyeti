@@ -13,8 +13,8 @@ struct AracGostergeIsaret {
     var aracGosterge : String
 }
 
-class Veriler {
-    static let shared = Veriler()
+class AGPIVeriler {
+    static let shared = AGPIVeriler()
     
     func getAracGostergePaneliVeriler() -> [AracGostergeIsaret] {
         
