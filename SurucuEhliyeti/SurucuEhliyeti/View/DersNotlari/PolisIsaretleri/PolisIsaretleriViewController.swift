@@ -39,6 +39,7 @@ extension PolisIsaretleriViewController: UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "PolisIsaretleriTableViewCell", for: indexPath) as! PolisIsaretleriTableViewCell
         cell.setUpCell(polisIsareti: polisIsaretVeriler2[indexPath.row])
         return cell
+
     }
 }
 
