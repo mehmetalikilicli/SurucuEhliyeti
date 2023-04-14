@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PolisIsaretleriViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
+                <outlet property="polisIsaretTableView" destination="p9A-oz-EHH" id="JE7-BT-9y3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polis İşaretleri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM7-ga-wtq">
-                    <rect key="frame" x="142" y="411.66666666666669" width="106" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-oz-EHH">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="aM7-ga-wtq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HL8-Mh-9Xx"/>
-                <constraint firstItem="aM7-ga-wtq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UbY-n8-8yR"/>
+                <constraint firstItem="p9A-oz-EHH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qz1-uz-udV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p9A-oz-EHH" secondAttribute="trailing" id="SIi-cB-nYe"/>
+                <constraint firstItem="p9A-oz-EHH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="klt-no-eMK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p9A-oz-EHH" secondAttribute="bottom" id="z1N-YL-qBD"/>
             </constraints>
             <point key="canvasLocation" x="131" y="-12"/>
         </view>

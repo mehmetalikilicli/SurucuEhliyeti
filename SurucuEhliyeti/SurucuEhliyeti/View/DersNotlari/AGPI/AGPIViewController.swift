@@ -30,10 +30,10 @@ class AGPIViewController: UIViewController {
         
     }
     
-    fileprivate func getAGPIVeriler(){
+     func getAGPIVeriler(){
         let AGPIVeriler = AGPIVeriler()
         AGPIListe = AGPIVeriler.getAracGostergePaneliVeriler()
-        print("veriler \(AGPIListe)")
+        //print("veriler \(AGPIListe)")
     }
     
 }
@@ -45,8 +45,8 @@ extension AGPIViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AGPICollectionViewCell", for: indexPath) as! AGPICollectionViewCell
-        cell.setUpCell(aracGostergeIsaret: AGPIListe![indexPath.row])
-        cell.AGPIImageView.image = UIImage(named: "\(AGPIListe![indexPath.row].aracGostergeImage)")
+        //cell.setUpCell(aracGostergeIsaret: AGPIListe![indexPath.row])
+        //cell.AGPIImageView.image = UIImage(named: "\(AGPIListe![indexPath.row].aracGostergeImage)")
         print("alsdf")
         return cell
     }
