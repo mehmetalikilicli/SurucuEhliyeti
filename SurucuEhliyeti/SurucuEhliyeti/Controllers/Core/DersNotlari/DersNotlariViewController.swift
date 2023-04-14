@@ -18,6 +18,8 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func polisIsaretleriButton(_ sender: Any) {
+        let polisIsaretleriVC = PolisIsaretleriViewController()
+        self.navigationController?.pushViewController(polisIsaretleriVC, animated: true)
         print("polisIsaretleriButton  tiklandi.")
     }
     
