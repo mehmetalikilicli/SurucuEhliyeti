@@ -9,6 +9,18 @@ import UIKit
 
 class DersNotlariViewController: UIViewController {
 
+    @IBOutlet weak var trafikIsaretleriButton: UIButton!
+    @IBOutlet weak var polisIsaretleriButton: UIButton!
+    @IBOutlet weak var AGPIButton: UIButton!
+    @IBOutlet weak var ilkYardimButton: UIButton!
+    @IBOutlet weak var levhalarButton: UIButton!
+    @IBOutlet weak var TKVCBButton: UIButton!
+    @IBOutlet weak var trafikAdabiButton: UIButton!
+    @IBOutlet weak var aracTeknigiButton: UIButton!
+    @IBOutlet weak var sinavHakkindaButton: UIButton!
+    @IBOutlet weak var sikSorulanSorularButton: UIButton!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
