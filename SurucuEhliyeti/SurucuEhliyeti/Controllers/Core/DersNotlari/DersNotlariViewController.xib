@@ -29,13 +29,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6U7-dH-EG7">
-                    <rect key="frame" x="20" y="97" width="350" height="80"/>
+                    <rect key="frame" x="20" y="97" width="350" height="90"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-wb-Xxs">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Trafik İşaretleri">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-traffic-light-48" imagePlacement="top" title="Trafik İşaretleri" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -43,10 +43,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECg-sn-Mbn">
-                            <rect key="frame" x="185" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Polis İşaretleri">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-police-48" imagePlacement="top" title="Polis İşaretleri" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -55,18 +55,18 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="0gO-Dk-TMP"/>
+                        <constraint firstAttribute="height" constant="90" id="0gO-Dk-TMP"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OQo-sv-ahZ">
-                    <rect key="frame" x="20" y="197" width="350" height="80"/>
+                    <rect key="frame" x="20" y="207.00000000000003" width="350" height="102.33333333333334"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrD-Or-Lxo">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="102.33333333333333"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Araç Gösterge Paneli İşaretleri">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-dashboard-48" imagePlacement="top" title="Araç Gösterge Paneli İşaretleri" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -74,10 +74,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN1-rD-tLw">
-                            <rect key="frame" x="185" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="102.33333333333333"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="İlk Yardım">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-first-aid-kit-48" imagePlacement="top" title="İlk Yardım" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -86,17 +86,17 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="WBT-Ej-gO3"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="WBT-Ej-gO3"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-NZ-7Xm">
-                    <rect key="frame" x="20" y="297" width="350" height="80"/>
+                    <rect key="frame" x="20" y="329.33333333333331" width="350" height="90"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-to-xDi">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Levhalar">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-maximum-speed-48" imagePlacement="top" title="Levhalar" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -104,10 +104,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7w-c1-kq3">
-                            <rect key="frame" x="185" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Trafik Kuralları Ve Çevre Bilgisi" subtitle="">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-warning-48" imagePlacement="top" title="Trafik Kuralları Ve Çevre Bilgisi" subtitle="" imagePadding="6">
+                                <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -116,17 +117,17 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="dZs-XP-BTq"/>
+                        <constraint firstAttribute="height" constant="90" id="dZs-XP-BTq"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-ld-DSQ">
-                    <rect key="frame" x="20" y="397" width="350" height="80"/>
+                    <rect key="frame" x="20" y="439.33333333333331" width="350" height="89.999999999999943"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn4-jB-gxX">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Trafik Adabı">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-traffic-jam-48" imagePlacement="top" title="Trafik Adabı" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -134,10 +135,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Nd-iGa">
-                            <rect key="frame" x="185" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Araç Tekniği">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-car-service-48" imagePlacement="top" title="Araç Tekniği" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -146,17 +147,17 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="zfB-WE-0ES"/>
+                        <constraint firstAttribute="height" constant="90" id="zfB-WE-0ES"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pLK-ic-iXl">
-                    <rect key="frame" x="20" y="497" width="350" height="80"/>
+                    <rect key="frame" x="20" y="549.33333333333337" width="350" height="90"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-Kw-oc4">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Sınav Hakkında">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-test-passed-48" imagePlacement="top" title="Sınav Hakkında" imagePadding="8">
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -164,10 +165,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOY-bp-io3">
-                            <rect key="frame" x="185" y="0.0" width="165" height="80"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Sık Sorulan Sorular">
+                            <buttonConfiguration key="configuration" style="plain" image="icons8-get-help-48" imagePlacement="top" title="Sık Sorulan Sorular" imagePadding="1">
+                                <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
@@ -176,7 +178,7 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="Ni2-dl-0xe"/>
+                        <constraint firstAttribute="height" constant="90" id="Ni2-dl-0xe"/>
                     </constraints>
                 </stackView>
             </subviews>
@@ -203,6 +205,16 @@
         </view>
     </objects>
     <resources>
+        <image name="icons8-car-service-48" width="46" height="43"/>
+        <image name="icons8-dashboard-48" width="40" height="40"/>
+        <image name="icons8-first-aid-kit-48" width="48" height="44"/>
+        <image name="icons8-get-help-48" width="46" height="46"/>
+        <image name="icons8-maximum-speed-48" width="46" height="46"/>
+        <image name="icons8-police-48" width="32" height="43"/>
+        <image name="icons8-test-passed-48" width="36" height="46"/>
+        <image name="icons8-traffic-jam-48" width="46" height="42"/>
+        <image name="icons8-traffic-light-48" width="36" height="42"/>
+        <image name="icons8-warning-48" width="46" height="41"/>
         <namedColor name="ButtonBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

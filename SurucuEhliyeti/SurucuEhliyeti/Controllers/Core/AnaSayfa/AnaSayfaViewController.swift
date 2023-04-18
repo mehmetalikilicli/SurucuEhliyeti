@@ -9,9 +9,17 @@ import UIKit
 
 class AnaSayfaViewController: UIViewController {
 
+    @IBOutlet weak var cikmisSorularButton: UIButton!
+    @IBOutlet weak var ilkYardımCikmisSButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
 
+    }
+    private func setupView(){
+        cikmisSorularButton.layer.cornerRadius = 12.0
+        ilkYardımCikmisSButton.layer.cornerRadius = 12.0
     }
     
     @IBAction func cikmisSorularButton(_ sender: Any) {

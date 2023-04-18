@@ -23,9 +23,22 @@ class DersNotlariViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
  
-    
+    private func setupView(){
+        trafikIsaretleriButton.layer.cornerRadius = 12.0
+        polisIsaretleriButton.layer.cornerRadius = 12.0
+        AGPIButton.layer.cornerRadius = 12.0
+        ilkYardimButton.layer.cornerRadius = 12.0
+        levhalarButton.layer.cornerRadius = 12.0
+        TKVCBButton.layer.cornerRadius = 12.0
+        trafikAdabiButton.layer.cornerRadius = 12.0
+        aracTeknigiButton.layer.cornerRadius = 12.0
+        sinavHakkindaButton.layer.cornerRadius = 12.0
+        sikSorulanSorularButton.layer.cornerRadius = 12.0
+        
+    }
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
         let trafikIsaretleriVC = TrafikIsaretleriViewController()
         self.navigationController?.pushViewController(trafikIsaretleriVC, animated: true)
