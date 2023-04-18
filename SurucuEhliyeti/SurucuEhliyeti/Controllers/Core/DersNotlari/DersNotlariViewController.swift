@@ -20,10 +20,11 @@ class DersNotlariViewController: UIViewController {
     @IBOutlet weak var sinavHakkindaButton: UIButton!
     @IBOutlet weak var sikSorulanSorularButton: UIButton!
     
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+ 
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
         print("trafikIsaretleriButton  tiklandi.")
