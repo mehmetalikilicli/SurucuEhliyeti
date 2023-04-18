@@ -1,18 +1,23 @@
 //
-//  AGiPICollectionViewCell.swift
+//  AGPICollectionViewCell.swift
 //  SurucuEhliyeti
 //
-//  Created by Mehmet Ali Kılıçlı on 16.04.2023.
+//  Created by Mehmet Ali Kılıçlı on 18.04.2023.
 //
 
 import UIKit
 
 class AGPICollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var AGPICellImageView: UIImageView!
     
-    
-    @IBOutlet weak var imageView: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
     func setUpCell(aracGostergeIsaret: AracGostergeIsaret){
-        printContent(aracGostergeIsaret.aracGostergeImage)
+    
+        AGPICellImageView.image = UIImage(named: "\(aracGostergeIsaret.aracGostergeImage)")
+        
     }
 }
