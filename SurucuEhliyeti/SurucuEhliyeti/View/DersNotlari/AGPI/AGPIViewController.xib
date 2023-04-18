@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,21 +8,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrafikIsaretleriViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AGPIViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
-                <outlet property="trafikIsaretleriCollectionView" destination="DiR-k6-0sf" id="8jS-p4-O73"/>
+                <outlet property="AGPICollectionView" destination="BNe-EH-pof" id="UWp-z0-Wdd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DiR-k6-0sf">
-                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-EH-pof">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N9r-65-PIu">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="23v-Ss-BKH">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -33,12 +33,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DiR-k6-0sf" secondAttribute="trailing" id="XKa-Wk-3hg"/>
-                <constraint firstItem="DiR-k6-0sf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ynu-ll-yyV"/>
-                <constraint firstItem="DiR-k6-0sf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="v5c-pI-UsM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DiR-k6-0sf" secondAttribute="bottom" id="vpF-IK-UXZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BNe-EH-pof" secondAttribute="bottom" id="3EV-rg-pWn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BNe-EH-pof" secondAttribute="trailing" id="51i-Cc-HnR"/>
+                <constraint firstItem="BNe-EH-pof" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Wf-0E-Gm7"/>
+                <constraint firstItem="BNe-EH-pof" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LvC-Sa-jrV"/>
             </constraints>
-            <point key="canvasLocation" x="-68" y="-12"/>
+            <point key="canvasLocation" x="42" y="-11"/>
         </view>
     </objects>
     <resources>
