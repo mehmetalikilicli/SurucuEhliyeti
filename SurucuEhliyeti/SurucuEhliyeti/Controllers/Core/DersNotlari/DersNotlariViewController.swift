@@ -14,6 +14,8 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
+        let trafikIsaretleriVC = TrafikIsaretleriViewController()
+        self.navigationController?.pushViewController(trafikIsaretleriVC, animated: true)
         print("trafikIsaretleriButton  tiklandi.")
     }
     
