@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PolisIsaretleriViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
-                <outlet property="polisIsaretTableView" destination="p9A-oz-EHH" id="JE7-BT-9y3"/>
+                <outlet property="polisIsaretleriCollectionView" destination="dQl-uw-Ezg" id="sUJ-Se-fZi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,18 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-oz-EHH">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dQl-uw-Ezg">
                     <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="ZZb-Ui-xVn">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="p9A-oz-EHH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qz1-uz-udV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p9A-oz-EHH" secondAttribute="trailing" id="SIi-cB-nYe"/>
-                <constraint firstItem="p9A-oz-EHH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="klt-no-eMK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p9A-oz-EHH" secondAttribute="bottom" id="z1N-YL-qBD"/>
+                <constraint firstItem="dQl-uw-Ezg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Muy-ab-kcc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dQl-uw-Ezg" secondAttribute="bottom" id="VH2-mg-Ow6"/>
+                <constraint firstItem="dQl-uw-Ezg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bHR-wP-5TJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dQl-uw-Ezg" secondAttribute="trailing" id="vXx-GM-llO"/>
             </constraints>
             <point key="canvasLocation" x="131" y="-12"/>
         </view>

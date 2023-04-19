@@ -9,37 +9,38 @@ import UIKit
 
 class PolisIsaretleriViewController: UIViewController {
     
-    var polisIsaretListe : [PolisIsaret]?
-
-
-    @IBOutlet weak var polisIsaretTableView: UITableView!
+    var PolisIsaretleriVeri : [PolisIsaret]?
+    
+    @IBOutlet weak var polisIsaretleriCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        polisIsaretTableView.register(PolisIsaretleriTableViewCell.self, forCellReuseIdentifier: "PolisIsaretleriTableViewCell")
-
+        getPolisIsaretVeriler()
         
-        polisIsaretTableView.delegate = self
-        polisIsaretTableView.dataSource = self
+        
+        let nibName = UINib(nibName: "PolisIsaretleriCollectionViewCell", bundle: nil)
+        self.polisIsaretleriCollectionView.register(nibName, forCellWithReuseIdentifier: "PolisIsaretleriCollectionViewCell")
+        
+        polisIsaretleriCollectionView.delegate = self
+        polisIsaretleriCollectionView.dataSource = self
         
     }
     
     func getPolisIsaretVeriler(){
        let polisIsaretVeriler = PolisIsaretVeriler()
-        polisIsaretListe = polisIsaretVeriler.getAPolisIsaretVeriler()
+        PolisIsaretleriVeri = polisIsaretVeriler.getAPolisIsaretVeriler()
    }
 }
 
-extension PolisIsaretleriViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return polisIsaretVeriler2.count
+extension PolisIsaretleriViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return PolisIsaretleriVeri!.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PolisIsaretleriTableViewCell", for: indexPath) as! PolisIsaretleriTableViewCell
-        cell.setUpCell(polisIsareti: polisIsaretVeriler2[indexPath.row])
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PolisIsaretleriCollectionViewCell", for: indexPath) as! PolisIsaretleriCollectionViewCell
+        cell.seUpCell(polisIsaret: PolisIsaretleriVeri![indexPath.row])
         return cell
-
     }
 }
-
