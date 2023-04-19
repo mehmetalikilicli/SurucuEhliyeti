@@ -12,6 +12,8 @@
 		1706D05E29E81672002DC0F2 /* AracGostergePaneliVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706D05D29E81672002DC0F2 /* AracGostergePaneliVeri.swift */; };
 		1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */; };
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
+		1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */; };
+		1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */; };
 		17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */; };
 		17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDE29E2FF56009EDA46 /* FirebaseAuth */; };
 		17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */; };
@@ -39,8 +41,6 @@
 		17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636829E4C72200877988 /* DersNotlariViewController.xib */; };
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
-		17E4A6C729E872B400EE0991 /* PolisIsaretleriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4A6C529E872B400EE0991 /* PolisIsaretleriTableViewCell.swift */; };
-		17E4A6C829E872B400EE0991 /* PolisIsaretleriTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E4A6C629E872B400EE0991 /* PolisIsaretleriTableViewCell.xib */; };
 		17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 		1706D05D29E81672002DC0F2 /* AracGostergePaneliVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AracGostergePaneliVeri.swift; sourceTree = "<group>"; };
 		1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnaSayfaStroyBoard.storyboard; sourceTree = "<group>"; };
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
+		1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
 		1796BE6A29EEB594009E45D7 /* AGPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPIViewController.swift; sourceTree = "<group>"; };
 		1796BE6B29EEB594009E45D7 /* AGPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGPIViewController.xib; sourceTree = "<group>"; };
 		1796BE6E29EEB6C4009E45D7 /* AGPICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -73,8 +75,6 @@
 		17DC636829E4C72200877988 /* DersNotlariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DersNotlariViewController.xib; sourceTree = "<group>"; };
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
-		17E4A6C529E872B400EE0991 /* PolisIsaretleriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriTableViewCell.swift; sourceTree = "<group>"; };
-		17E4A6C629E872B400EE0991 /* PolisIsaretleriTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriTableViewCell.xib; sourceTree = "<group>"; };
 		17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriVeri.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,8 +125,8 @@
 		1706D06429E820DC002DC0F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1771036229EEE3E400DE6E02 /* PolisIsaretleriCell */,
 				17A9644329ED7BFF00C434A2 /* TrafikIsaretleriCell */,
-				17E4A6C429E8729E00EE0991 /* PolisIsaretleriCell */,
 				17957A3A29E8488A0064FA01 /* AGPICell */,
 			);
 			path = Cells;
@@ -135,11 +135,76 @@
 		1754BAED29E2C7CF00766776 /* DersNotlari */ = {
 			isa = PBXGroup;
 			children = (
+				1771036129EEE13700DE6E02 /* SSS */,
+				1771036029EEE12E00DE6E02 /* SinavHakkinda */,
+				1771035F29EEE12700DE6E02 /* AracTeknigi */,
+				1771035E29EEE12100DE6E02 /* TrafikAdabi */,
+				1771035D29EEE11800DE6E02 /* TKVCB */,
+				1771035C29EEE11100DE6E02 /* Levhalar */,
+				1771035B29EEE10500DE6E02 /* IlkYardim */,
 				1706D05F29E816A6002DC0F2 /* AGPI */,
 				17D266E429E2FBC50076A4FB /* PolisIsaretleri */,
 				17D266E329E2FBBC0076A4FB /* TrafikIsaretleri */,
 			);
 			path = DersNotlari;
+			sourceTree = "<group>";
+		};
+		1771035B29EEE10500DE6E02 /* IlkYardim */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IlkYardim;
+			sourceTree = "<group>";
+		};
+		1771035C29EEE11100DE6E02 /* Levhalar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Levhalar;
+			sourceTree = "<group>";
+		};
+		1771035D29EEE11800DE6E02 /* TKVCB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TKVCB;
+			sourceTree = "<group>";
+		};
+		1771035E29EEE12100DE6E02 /* TrafikAdabi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TrafikAdabi;
+			sourceTree = "<group>";
+		};
+		1771035F29EEE12700DE6E02 /* AracTeknigi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AracTeknigi;
+			sourceTree = "<group>";
+		};
+		1771036029EEE12E00DE6E02 /* SinavHakkinda */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SinavHakkinda;
+			sourceTree = "<group>";
+		};
+		1771036129EEE13700DE6E02 /* SSS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SSS;
+			sourceTree = "<group>";
+		};
+		1771036229EEE3E400DE6E02 /* PolisIsaretleriCell */ = {
+			isa = PBXGroup;
+			children = (
+				1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */,
+				1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */,
+			);
+			path = PolisIsaretleriCell;
 			sourceTree = "<group>";
 		};
 		17957A3A29E8488A0064FA01 /* AGPICell */ = {
@@ -275,15 +340,6 @@
 			path = AnaSayfa;
 			sourceTree = "<group>";
 		};
-		17E4A6C429E8729E00EE0991 /* PolisIsaretleriCell */ = {
-			isa = PBXGroup;
-			children = (
-				17E4A6C529E872B400EE0991 /* PolisIsaretleriTableViewCell.swift */,
-				17E4A6C629E872B400EE0991 /* PolisIsaretleriTableViewCell.xib */,
-			);
-			path = PolisIsaretleriCell;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,11 +414,11 @@
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
 				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
 				1706D05B29E81335002DC0F2 /* ProfilViewController.xib in Resources */,
+				1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */,
 				17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */,
 				17A9644729ED7C1600C434A2 /* TrafikIsaretleriCollectionViewCell.xib in Resources */,
 				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
-				17E4A6C829E872B400EE0991 /* PolisIsaretleriTableViewCell.xib in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
 				1796BE6D29EEB594009E45D7 /* AGPIViewController.xib in Resources */,
 				1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */,
@@ -380,12 +436,12 @@
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				1796BE6C29EEB594009E45D7 /* AGPIViewController.swift in Sources */,
+				1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
 				17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
-				17E4A6C729E872B400EE0991 /* PolisIsaretleriTableViewCell.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
