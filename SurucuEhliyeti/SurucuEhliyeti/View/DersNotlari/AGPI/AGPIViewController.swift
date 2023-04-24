@@ -43,6 +43,9 @@ extension AGPIViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let overLayer = OverLayoutPopUp(overLayoutImageView: AGPIVeri![indexPath.row].aracGostergeImage , overLayoutText: AGPIVeri![indexPath.row].aracGosterge)
+        //overLayer.overLayoutImageView.image = UIImage(named: "\(AGPIVeri![indexPath.row].aracGostergeImage)")
+        //overLayer.setupUI(overLayoutImageView: AGPIVeri![indexPath.row].aracGostergeImage, overLayoutText: AGPIVeri![indexPath.row].aracGosterge)
+        overLayer.appear(sender: self)
     }
 }

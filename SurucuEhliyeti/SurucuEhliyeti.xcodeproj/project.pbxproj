@@ -14,6 +14,8 @@
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
 		1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */; };
 		1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */; };
+		177F79BE29F0058100C3C92F /* OverLayoutPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */; };
+		177F79BF29F0058100C3C92F /* OverLayoutPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */; };
 		17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */; };
 		17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDE29E2FF56009EDA46 /* FirebaseAuth */; };
 		17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */; };
@@ -52,6 +54,8 @@
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
+		177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLayoutPopUp.swift; sourceTree = "<group>"; };
+		177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverLayoutPopUp.xib; sourceTree = "<group>"; };
 		1796BE6A29EEB594009E45D7 /* AGPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPIViewController.swift; sourceTree = "<group>"; };
 		1796BE6B29EEB594009E45D7 /* AGPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGPIViewController.xib; sourceTree = "<group>"; };
 		1796BE6E29EEB6C4009E45D7 /* AGPICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -207,6 +211,15 @@
 			path = PolisIsaretleriCell;
 			sourceTree = "<group>";
 		};
+		177F79BB29F0054E00C3C92F /* OverLayerPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */,
+				177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */,
+			);
+			path = OverLayerPopUp;
+			sourceTree = "<group>";
+		};
 		17957A3A29E8488A0064FA01 /* AGPICell */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +291,7 @@
 		17DC335529ACDC2800DD16EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				177F79BB29F0054E00C3C92F /* OverLayerPopUp */,
 				17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */,
 				17DC334129ACDB6C00DD16EC /* AppDelegate.swift */,
 			);
@@ -421,6 +435,7 @@
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
 				1796BE6D29EEB594009E45D7 /* AGPIViewController.xib in Resources */,
+				177F79BF29F0058100C3C92F /* OverLayoutPopUp.xib in Resources */,
 				1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +458,7 @@
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
+				177F79BE29F0058100C3C92F /* OverLayoutPopUp.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,
