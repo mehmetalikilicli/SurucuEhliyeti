@@ -11,11 +11,12 @@
 		1706D05B29E81335002DC0F2 /* ProfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1706D05929E81335002DC0F2 /* ProfilViewController.xib */; };
 		1706D05E29E81672002DC0F2 /* AracGostergePaneliVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706D05D29E81672002DC0F2 /* AracGostergePaneliVeri.swift */; };
 		1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */; };
+		1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720DA8829F6AC8F00FEB2B9 /* PopUp.swift */; };
+		1729252A29F6B4CA0051CA95 /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1729252929F6B4CA0051CA95 /* PopUp.xib */; };
+		1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */; };
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
 		1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */; };
 		1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */; };
-		177F79BE29F0058100C3C92F /* OverLayoutPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */; };
-		177F79BF29F0058100C3C92F /* OverLayoutPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */; };
 		17948FDD29E2FF56009EDA46 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDC29E2FF56009EDA46 /* FirebaseAnalytics */; };
 		17948FDF29E2FF56009EDA46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FDE29E2FF56009EDA46 /* FirebaseAuth */; };
 		17948FE129E2FF56009EDA46 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17948FE029E2FF56009EDA46 /* FirebaseCrashlytics */; };
@@ -51,11 +52,12 @@
 		1706D05929E81335002DC0F2 /* ProfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilViewController.xib; sourceTree = "<group>"; };
 		1706D05D29E81672002DC0F2 /* AracGostergePaneliVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AracGostergePaneliVeri.swift; sourceTree = "<group>"; };
 		1718737129AE331100D6CABC /* AnaSayfaStroyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnaSayfaStroyBoard.storyboard; sourceTree = "<group>"; };
+		1720DA8829F6AC8F00FEB2B9 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		1729252929F6B4CA0051CA95 /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
+		1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikIsaretleriVeri.swift; sourceTree = "<group>"; };
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
-		177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLayoutPopUp.swift; sourceTree = "<group>"; };
-		177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverLayoutPopUp.xib; sourceTree = "<group>"; };
 		1796BE6A29EEB594009E45D7 /* AGPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPIViewController.swift; sourceTree = "<group>"; };
 		1796BE6B29EEB594009E45D7 /* AGPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGPIViewController.xib; sourceTree = "<group>"; };
 		1796BE6E29EEB6C4009E45D7 /* AGPICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGPICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				1706D05D29E81672002DC0F2 /* AracGostergePaneliVeri.swift */,
 				17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */,
+				1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */,
 			);
 			path = Veriler;
 			sourceTree = "<group>";
@@ -211,13 +214,13 @@
 			path = PolisIsaretleriCell;
 			sourceTree = "<group>";
 		};
-		177F79BB29F0054E00C3C92F /* OverLayerPopUp */ = {
+		177F79BB29F0054E00C3C92F /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				177F79BC29F0058100C3C92F /* OverLayoutPopUp.swift */,
-				177F79BD29F0058100C3C92F /* OverLayoutPopUp.xib */,
+				1720DA8829F6AC8F00FEB2B9 /* PopUp.swift */,
+				1729252929F6B4CA0051CA95 /* PopUp.xib */,
 			);
-			path = OverLayerPopUp;
+			path = PopUp;
 			sourceTree = "<group>";
 		};
 		17957A3A29E8488A0064FA01 /* AGPICell */ = {
@@ -291,7 +294,7 @@
 		17DC335529ACDC2800DD16EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				177F79BB29F0054E00C3C92F /* OverLayerPopUp */,
+				177F79BB29F0054E00C3C92F /* PopUp */,
 				17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */,
 				17DC334129ACDB6C00DD16EC /* AppDelegate.swift */,
 			);
@@ -426,6 +429,7 @@
 				17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */,
 				17D266E829E2FBDC0076A4FB /* TrafikIsaretleriViewController.xib in Resources */,
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
+				1729252A29F6B4CA0051CA95 /* PopUp.xib in Resources */,
 				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
 				1706D05B29E81335002DC0F2 /* ProfilViewController.xib in Resources */,
 				1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */,
@@ -435,7 +439,6 @@
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
 				1796BE6D29EEB594009E45D7 /* AGPIViewController.xib in Resources */,
-				177F79BF29F0058100C3C92F /* OverLayoutPopUp.xib in Resources */,
 				1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,15 +453,16 @@
 				1706D05E29E81672002DC0F2 /* AracGostergePaneliVeri.swift in Sources */,
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
+				1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */,
 				1796BE6C29EEB594009E45D7 /* AGPIViewController.swift in Sources */,
 				1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
 				17D266E729E2FBDC0076A4FB /* TrafikIsaretleriViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
+				1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
-				177F79BE29F0058100C3C92F /* OverLayoutPopUp.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,

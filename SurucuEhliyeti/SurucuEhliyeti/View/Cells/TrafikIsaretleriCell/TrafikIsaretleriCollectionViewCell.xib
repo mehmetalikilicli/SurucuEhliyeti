@@ -16,26 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="135" height="127"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-4j-XZH">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adaptifIsikSistemi" translatesAutoresizingMaskIntoConstraints="NO" id="mEM-9l-X2a">
                         <rect key="frame" x="0.0" y="0.0" width="135" height="127"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="3nf-4j-XZH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N5H-hl-Qxn"/>
-                <constraint firstAttribute="trailing" secondItem="3nf-4j-XZH" secondAttribute="trailing" id="NJH-r4-Hpx"/>
-                <constraint firstAttribute="bottom" secondItem="3nf-4j-XZH" secondAttribute="bottom" id="dk7-Z1-8yo"/>
-                <constraint firstItem="3nf-4j-XZH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iQO-aY-Zg7"/>
+                <constraint firstAttribute="trailing" secondItem="mEM-9l-X2a" secondAttribute="trailing" id="2km-rD-7D1"/>
+                <constraint firstAttribute="bottom" secondItem="mEM-9l-X2a" secondAttribute="bottom" id="Lif-Iz-91n"/>
+                <constraint firstItem="mEM-9l-X2a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XGL-j7-w6B"/>
+                <constraint firstItem="mEM-9l-X2a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qgX-gO-ooq"/>
             </constraints>
             <size key="customSize" width="135" height="127"/>
             <connections>
-                <outlet property="TILabel" destination="3nf-4j-XZH" id="gEB-Jd-Zs2"/>
+                <outlet property="trafikIsaretImageView" destination="mEM-9l-X2a" id="3v6-xS-5SE"/>
             </connections>
             <point key="canvasLocation" x="-3.8461538461538458" y="15.284360189573459"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="adaptifIsikSistemi" width="31" height="31"/>
+    </resources>
 </document>
