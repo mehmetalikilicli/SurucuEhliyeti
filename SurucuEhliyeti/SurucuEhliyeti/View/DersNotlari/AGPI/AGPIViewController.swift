@@ -9,6 +9,7 @@ import UIKit
 
 class AGPIViewController: UIViewController {
     
+    var popUp: PopUp!
     var AGPIVeri : [AracGostergeIsaret]?
 
     @IBOutlet weak var AGPICollectionView: UICollectionView!
@@ -38,14 +39,20 @@ extension AGPIViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AGPICollectionViewCell", for: indexPath) as! AGPICollectionViewCell
-        cell.setUpCell(aracGostergeIsaret: AGPIVeri![indexPath.row])
+        cell.AGPICellImageView.image = UIImage(named: "\(AGPIVeri![indexPath.row].aracGostergeImage)")
+        //cell.setUpCell(aracGostergeIsaret: AGPIVeri![indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let overLayer = OverLayoutPopUp(overLayoutImageView: AGPIVeri![indexPath.row].aracGostergeImage , overLayoutText: AGPIVeri![indexPath.row].aracGosterge)
-        //overLayer.overLayoutImageView.image = UIImage(named: "\(AGPIVeri![indexPath.row].aracGostergeImage)")
-        //overLayer.setupUI(overLayoutImageView: AGPIVeri![indexPath.row].aracGostergeImage, overLayoutText: AGPIVeri![indexPath.row].aracGosterge)
-        overLayer.appear(sender: self)
+        
+        self.popUp = PopUp(frame: self.view.frame)
+        self.popUp.popUpButton.addTarget(self, action: #selector(popUpButtonTapped), for: .touchUpInside)
+        self.popUp.setUpUI(image: AGPIVeri![indexPath.row].aracGostergeImage, label: AGPIVeri![indexPath.row].aracGosterge)
+        self.view.addSubview(popUp)
+    }
+    
+    @objc func popUpButtonTapped(){
+        popUp.removeFromSuperview()
     }
 }
