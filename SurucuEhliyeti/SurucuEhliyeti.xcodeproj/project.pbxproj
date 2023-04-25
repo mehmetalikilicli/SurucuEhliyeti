@@ -41,6 +41,10 @@
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
 		17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */; };
+		7AFA2D6929F8066D00214550 /* TarafikIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */; };
+		7AFA2D6A29F8066D00214550 /* TarafikIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */; };
+		7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6C29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift */; };
+		7AFA2D6F29F8091900214550 /* TrafikIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6D29F8091900214550 /* TrafikIsaretleriCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
 		17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriVeri.swift; sourceTree = "<group>"; };
+		7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarafikIsaretleriViewController.swift; sourceTree = "<group>"; };
+		7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarafikIsaretleriViewController.xib; sourceTree = "<group>"; };
+		7AFA2D6C29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AFA2D6D29F8091900214550 /* TrafikIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafikIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		1706D06429E820DC002DC0F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7AFA2D6B29F808DE00214550 /* TrafikIsaretleriCell */,
 				1771036229EEE3E400DE6E02 /* PolisIsaretleriCell */,
 				17957A3A29E8488A0064FA01 /* AGPICell */,
 			);
@@ -141,6 +150,7 @@
 				1771035C29EEE11100DE6E02 /* Levhalar */,
 				1771035B29EEE10500DE6E02 /* IlkYardim */,
 				1706D05F29E816A6002DC0F2 /* AGPI */,
+				7AFA2D6629F8063E00214550 /* TrafikIsaretleri */,
 				17D266E429E2FBC50076A4FB /* PolisIsaretleri */,
 			);
 			path = DersNotlari;
@@ -329,6 +339,24 @@
 			path = AnaSayfa;
 			sourceTree = "<group>";
 		};
+		7AFA2D6629F8063E00214550 /* TrafikIsaretleri */ = {
+			isa = PBXGroup;
+			children = (
+				7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */,
+				7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */,
+			);
+			path = TrafikIsaretleri;
+			sourceTree = "<group>";
+		};
+		7AFA2D6B29F808DE00214550 /* TrafikIsaretleriCell */ = {
+			isa = PBXGroup;
+			children = (
+				7AFA2D6C29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift */,
+				7AFA2D6D29F8091900214550 /* TrafikIsaretleriCollectionViewCell.xib */,
+			);
+			path = TrafikIsaretleriCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,11 +427,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */,
+				7AFA2D6A29F8066D00214550 /* TarafikIsaretleriViewController.xib in Resources */,
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
 				1729252A29F6B4CA0051CA95 /* PopUp.xib in Resources */,
 				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
 				1706D05B29E81335002DC0F2 /* ProfilViewController.xib in Resources */,
 				1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */,
+				7AFA2D6F29F8091900214550 /* TrafikIsaretleriCollectionViewCell.xib in Resources */,
 				17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */,
 				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
@@ -426,12 +456,14 @@
 				1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */,
 				1796BE6C29EEB594009E45D7 /* AGPIViewController.swift in Sources */,
 				1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */,
+				7AFA2D6929F8066D00214550 /* TarafikIsaretleriViewController.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
+				7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,

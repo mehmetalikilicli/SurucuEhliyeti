@@ -20,18 +20,14 @@ class TrafikIsaretleriVeriler {
     func getTrafikIsaretleriVeriler() -> [TrafikIsaret] {
         
         var trafikIsaretleriVeriler : [TrafikIsaret] = [
-            TrafikIsaret(id: 1, trafikIsaretImage: "onSisLamba", trafikIsaret: "Ön sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "arkaSisLamba", trafikIsaret: "Arka sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "farkSeviyeKontrol", trafikIsaret: "Fark seviye kontrol sistem arızası."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "adaptifIsikSistemi", trafikIsaret: "Adaptif ışık sistemi uyarı ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "onSisLamba", trafikIsaret: "Ön sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "arkaSisLamba", trafikIsaret: "Arka sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "farkSeviyeKontrol", trafikIsaret: "Fark seviye kontrol sistem arızası."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "adaptifIsikSistemi", trafikIsaret: "Adaptif ışık sistemi uyarı ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "onSisLamba", trafikIsaret: "Ön sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "arkaSisLamba", trafikIsaret: "Arka sis lambalarınızın açık olduğunu gösteren ikaz ışığıdır."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "farkSeviyeKontrol", trafikIsaret: "Fark seviye kontrol sistem arızası."),
-            TrafikIsaret(id: 1, trafikIsaretImage: "adaptifIsikSistemi", trafikIsaret: "Adaptif ışık sistemi uyarı ışığıdır."),
+            TrafikIsaret(id: 1, trafikIsaretImage: "IsikliIsaretCihazi", trafikIsaret: "Işıklı İşaret Cihazı"),
+            TrafikIsaret(id: 2, trafikIsaretImage: "AnaYol-TaliYolKavsagi", trafikIsaret: "Ana Yol-Tali Yol Kavşağı"),
+            TrafikIsaret(id: 3, trafikIsaretImage: "AnaYol-TaliYolKavsagi1", trafikIsaret: "Ana Yol-Tali Yol Kavşağı"),
+            TrafikIsaret(id: 4, trafikIsaretImage: "AnaYol-TaliYolKavsagi2", trafikIsaret: "Ana Yol-Tali Yol Kavşağı"),
+            TrafikIsaret(id: 5, trafikIsaretImage: "AcilanKopru", trafikIsaret: "Açılan Köprü"),
+            TrafikIsaret(id: 6, trafikIsaretImage: "AnaYol-TaliYolKavsagi3", trafikIsaret: "Ana Yol-Tali Yol Kavşağı"),
+            TrafikIsaret(id: 7, trafikIsaretImage: "AnaYol-TaliYolKavsagi4", trafikIsaret: "Ana Yol-Tali Yol Kavşağı"),
+            TrafikIsaret(id: 8, trafikIsaretImage: "BisikletGecebilir", trafikIsaret: "Bisiklet Geçebilir"),
         ]
         return trafikIsaretleriVeriler
     }
