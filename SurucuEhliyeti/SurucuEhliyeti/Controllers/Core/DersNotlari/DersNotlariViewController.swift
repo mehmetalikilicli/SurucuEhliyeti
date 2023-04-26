@@ -59,7 +59,7 @@ class DersNotlariViewController: UIViewController {
     
     @IBAction func ilkYardimButton(_ sender: Any) {
                 
-        var ilkYardimBolumlerListe = ilkYardimBolumler.shared.getIlkYardimBolumler()
+        let ilkYardimBolumlerListe = ilkYardimBolumler.shared.getIlkYardimBolumler()
         let ilkYardimVC = IcerikTableViewVC()
         ilkYardimVC.bolumleriAl(bolumListesi: ilkYardimBolumlerListe)
         
@@ -73,7 +73,7 @@ class DersNotlariViewController: UIViewController {
     
     @IBAction func TKVCBButton(_ sender: Any) {
         
-        var TKVCBBolumlerListe = TKVCBBolumler.shared.getTKVCBBolumler()
+        let TKVCBBolumlerListe = TKVCBBolumler.shared.getTKVCBBolumler()
         let TKVCBVC = IcerikTableViewVC()
         TKVCBVC.bolumleriAl(bolumListesi: TKVCBBolumlerListe)
         
@@ -82,10 +82,22 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func trafikAdabiButton(_ sender: Any) {
+        
+        let trafikAdabiBolumlerListe = trafikAdabiBolumler.shared.gettrafikAdabiBolumler()
+        let trafikAdabiVC = IcerikTableViewVC()
+        trafikAdabiVC.bolumleriAl(bolumListesi: trafikAdabiBolumlerListe)
+        
+        self.navigationController?.pushViewController(trafikAdabiVC, animated: true)
         print("trafikAdabiButton tiklandi.")
     }
     
     @IBAction func aracTeknigiButton(_ sender: Any) {
+        
+        let aracTeknigiBolumlerListe = aracTeknigiBolumler.shared.getaracTeknigiBolumler()
+        let aracTeknigiVC = IcerikTableViewVC()
+        aracTeknigiVC.bolumleriAl(bolumListesi: aracTeknigiBolumlerListe)
+        
+        self.navigationController?.pushViewController(aracTeknigiVC, animated: true)
         print("aracTeknigiButton tiklandi.")
     }
     
