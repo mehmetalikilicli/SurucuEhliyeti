@@ -17,11 +17,18 @@ class ilkYardimBolumler {
     
     func getIlkYardimBolumler() -> [bolum] {
         
-        var ilkYardimBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "İlk Yardımın Tanımı ve Önemi"),
+        let ilkYardimBolumler : [bolum] = [
+            bolum(id: 1, bolumIsmi: "İlkyardımın Tanımı ve Önemi"),
             bolum(id: 2, bolumIsmi: "İnsan Vücudu"),
-            bolum(id: 3, bolumIsmi: "Temel Yaşam Desteği"),
-            bolum(id: 4, bolumIsmi: "Suni solunum"),
+            bolum(id: 3, bolumIsmi: "Temel Yaşam Desteği, Solunum Ve Kapl Durması"),
+            bolum(id: 4, bolumIsmi: "Suni Solunum Uygulamaları"),
+            bolum(id: 5, bolumIsmi: "Kanamalar Ve Yaralanmalar"),
+            bolum(id: 6, bolumIsmi: "Şok, Bayılma Ve Komada İlkyardım"),
+            bolum(id: 7, bolumIsmi: "Yara Çeşitleri"),
+            bolum(id: 8, bolumIsmi: "Kırık, Çıkık Ve Burkulmalar"),
+            bolum(id: 9, bolumIsmi: "Bilinç Bozukluklarında İlkyardım"),
+            bolum(id: 10, bolumIsmi: "Yaralının Taşımaya Hazırlanması Ve Taşıma"),
+            bolum(id: 11, bolumIsmi: "Yaralıları Taşıma Yöntemleri"),
         ]
         return ilkYardimBolumler
     }
@@ -33,12 +40,86 @@ class TKVCBBolumler {
     
     func getTKVCBBolumler() -> [bolum] {
         
-        var TKVCBBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "İlk Yardımın Tanımı ve Önemi"),
-            bolum(id: 2, bolumIsmi: "İnsan Vücudu"),
-            bolum(id: 3, bolumIsmi: "Temel Yaşam Desteği"),
-            bolum(id: 4, bolumIsmi: "Suni solunum"),
+        let TKVCBBolumler : [bolum] = [
+            bolum(id: 1, bolumIsmi: "Davraış Psikolojisi Ve Temel Karamlar"),
+            bolum(id: 2, bolumIsmi: "Trafik Psikolojisi"),
+            bolum(id: 3, bolumIsmi: "Trafikle İlgili Kurullar Kuruluşlar Ve Komisyonlar"),
+            bolum(id: 4, bolumIsmi: "Trafik Karayolu Ve Araçlarla İlgili Tanımlar"),
+            bolum(id: 5, bolumIsmi: "Karayolu Yapısı Ve Trafik işaretlerinin Korunması"),
+            bolum(id: 6, bolumIsmi: "Trafik İşaretleri"),
+            bolum(id: 7, bolumIsmi: "Işıklı Trafik İşaretleri"),
+            bolum(id: 8, bolumIsmi: "Yol Çizgileri"),
+            bolum(id: 9, bolumIsmi: "Trafik işaretleri Levhaları"),
+            bolum(id: 10, bolumIsmi: "Araç Sürme Yasağı"),
+            bolum(id: 11, bolumIsmi: "Araç Kullanma Süreleri"),
+            bolum(id: 12, bolumIsmi: "Hız Kuralları"),
+            bolum(id: 13, bolumIsmi: "Takip Mesafesi"),
+            bolum(id: 14, bolumIsmi: "Öndeki Aracı Geçme Ve Sollama Kuralları"),
+            bolum(id: 15, bolumIsmi: "Dönüşler Ve Doğrultu Değiştirme"),
+            bolum(id: 16, bolumIsmi: "Araçların Manevralarına Dair Kurallar"),
+            bolum(id: 17, bolumIsmi: "Sürücülerin Geri Gitme Ve Geri Dönüş Manevraları"),
+            bolum(id: 18, bolumIsmi: "Kavşaklarda Geçiş Hakkı"),
+            bolum(id: 19, bolumIsmi: "Geçiş Üstünlüğüne Sahip Araçlar Ve Uyulacak Kurallar"),
+            bolum(id: 20, bolumIsmi: "Gelen Trafikle Karşılaşmada Geçiş Kolaylığı Sağlama"),
+            bolum(id: 21, bolumIsmi: "Durma Ve Park Etme Kuralları"),
+            bolum(id: 22, bolumIsmi: "Karayollarında Bozulan Aracın Çekilmesi"),
+            bolum(id: 23, bolumIsmi: "Araçların Işıklandırılması Ve Kullanılması"),
+            bolum(id: 24, bolumIsmi: "Tedbirsiz Ve Saygısız Araç Sürme"),
+            bolum(id: 25, bolumIsmi: "Ses, Müzik, Görüntü Ve Haberleşme Cihazları"),
+            bolum(id: 26, bolumIsmi: "Okul Taşıtları"),
+            bolum(id: 27, bolumIsmi: "Araçların Boyutları, Ölçü Ve Ağırlıkları İle Yüklenmesi"),
+            bolum(id: 28, bolumIsmi: "Otoyol Kuralları"),
+            bolum(id: 29, bolumIsmi: "Bisiklet Ve Motorsiklet Sürücüleri"),
+            bolum(id: 30, bolumIsmi: "Sürücülerin Ve Yolcuların Koruyucu Tertibat Kullanması"),
+            bolum(id: 31, bolumIsmi: "Çocuk, Engelli, Hasta Taşıtları Ve Engelli Yayalar"),
+            bolum(id: 32, bolumIsmi: "Yayalar, Hayvan Sürücüleri Ve Yarış Kuralları"),
+            bolum(id: 33, bolumIsmi: "Sürücü Belgeleri Ve Verilme Şartları"),
+            bolum(id: 34, bolumIsmi: "Araçların Tescil Ve Muayene İşlemleri"),
+            bolum(id: 35, bolumIsmi: "Trafik Kazaları"),
+            bolum(id: 36, bolumIsmi: "Trafik Kazalarında Asli Kusur Sayılan Haller"),
+            bolum(id: 37, bolumIsmi: "Hukuki Sorumluluk Ve Sigorta"),
+            bolum(id: 38, bolumIsmi: "Araçlarda Bulundurulması Gereken Techizat"),
+            bolum(id: 39, bolumIsmi: "Çevre bilgisi"),
+            bolum(id: 40, bolumIsmi: "Harita Bilgisi"),
+            
         ]
         return TKVCBBolumler
+    }
+}
+
+class trafikAdabiBolumler {
+    static let shared = trafikAdabiBolumler()
+    
+    func gettrafikAdabiBolumler() -> [bolum] {
+        
+        let trafikAdabiBolumler : [bolum] = [
+            bolum(id: 1, bolumIsmi: "Trafikte Temel Değerler"),
+            bolum(id: 2, bolumIsmi: "Trafikte Empati Ve İletişim"),
+            bolum(id: 3, bolumIsmi: "Trafikte Hak İhlalleri"),
+            bolum(id: 4, bolumIsmi: "Trafikte Diğerlerinin Sürücü Davranışlarına Etkisi"),
+        ]
+        return trafikAdabiBolumler
+    }
+}
+
+class aracTeknigiBolumler {
+    static let shared = aracTeknigiBolumler()
+    
+    func getaracTeknigiBolumler() -> [bolum] {
+        
+        let aracTeknigiBolumler : [bolum] = [
+            bolum(id: 1, bolumIsmi: "Araç Tekniği"),
+            bolum(id: 2, bolumIsmi: "Motorun Ve Aracın Sistemleri"),
+            bolum(id: 3, bolumIsmi: "Araca Binmeden Önce Yapılması Gerekenler"),
+            bolum(id: 4, bolumIsmi: "Aracın Çalıştırılması"),
+            bolum(id: 5, bolumIsmi: "Gösterge Sistei Görevi"),
+            bolum(id: 6, bolumIsmi: "Aydınlatma Ve İkaz Sistemi"),
+            bolum(id: 7, bolumIsmi: "Aktif Ve Pasif Güvenlik Sistemleri"),
+            bolum(id: 8, bolumIsmi: "Rodaj Ve Motorun Bakımları"),
+            bolum(id: 9, bolumIsmi: "Lastikler"),
+            bolum(id: 10, bolumIsmi: "Aracın Durdurulması Gereken Haller"),
+            bolum(id: 11, bolumIsmi: "Yakıt Tasarrufu"),
+        ]
+        return aracTeknigiBolumler
     }
 }
