@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnaSayfaViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
+                <outlet property="cikmisSorularButton" destination="5fk-hC-jxg" id="FN8-Jd-FJZ"/>
+                <outlet property="ilkYardımCikmisSButton" destination="vK5-5e-VHx" id="gQY-C1-DRp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

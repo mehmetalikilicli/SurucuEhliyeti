@@ -23,11 +23,24 @@ class DersNotlariViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
  
-    
+    private func setupView(){
+        trafikIsaretleriButton.layer.cornerRadius = 12.0
+        polisIsaretleriButton.layer.cornerRadius = 12.0
+        AGPIButton.layer.cornerRadius = 12.0
+        ilkYardimButton.layer.cornerRadius = 12.0
+        levhalarButton.layer.cornerRadius = 12.0
+        TKVCBButton.layer.cornerRadius = 12.0
+        trafikAdabiButton.layer.cornerRadius = 12.0
+        aracTeknigiButton.layer.cornerRadius = 12.0
+        sinavHakkindaButton.layer.cornerRadius = 12.0
+        sikSorulanSorularButton.layer.cornerRadius = 12.0
+        
+    }
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
-        let trafikIsaretleriVC = TrafikIsaretleriViewController()
+        let trafikIsaretleriVC = TarafikIsaretleriViewController()
         self.navigationController?.pushViewController(trafikIsaretleriVC, animated: true)
         print("trafikIsaretleriButton  tiklandi.")
     }
@@ -45,6 +58,12 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func ilkYardimButton(_ sender: Any) {
+                
+        var ilkYardimBolumlerListe = ilkYardimBolumler.shared.getIlkYardimBolumler()
+        let ilkYardimVC = IcerikTableViewVC()
+        ilkYardimVC.bolumleriAl(bolumListesi: ilkYardimBolumlerListe)
+        
+        self.navigationController?.pushViewController(ilkYardimVC, animated: true)
         print("ilkYardimButton tiklandi.")
     }
     
@@ -53,6 +72,12 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func TKVCBButton(_ sender: Any) {
+        
+        var TKVCBBolumlerListe = TKVCBBolumler.shared.getTKVCBBolumler()
+        let TKVCBVC = IcerikTableViewVC()
+        TKVCBVC.bolumleriAl(bolumListesi: TKVCBBolumlerListe)
+        
+        self.navigationController?.pushViewController(TKVCBVC, animated: true)
         print("TKVCBButton tiklandi.")
     }
     
