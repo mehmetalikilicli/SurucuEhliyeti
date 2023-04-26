@@ -58,6 +58,12 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func ilkYardimButton(_ sender: Any) {
+                
+        var ilkYardimBolumlerListe = ilkYardimBolumler.shared.getIlkYardimBolumler()
+        let ilkYardimVC = IcerikTableViewVC()
+        ilkYardimVC.bolumleriAl(bolumListesi: ilkYardimBolumlerListe)
+        
+        self.navigationController?.pushViewController(ilkYardimVC, animated: true)
         print("ilkYardimButton tiklandi.")
     }
     
@@ -66,6 +72,12 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func TKVCBButton(_ sender: Any) {
+        
+        var TKVCBBolumlerListe = TKVCBBolumler.shared.getTKVCBBolumler()
+        let TKVCBVC = IcerikTableViewVC()
+        TKVCBVC.bolumleriAl(bolumListesi: TKVCBBolumlerListe)
+        
+        self.navigationController?.pushViewController(TKVCBVC, animated: true)
         print("TKVCBButton tiklandi.")
     }
     
