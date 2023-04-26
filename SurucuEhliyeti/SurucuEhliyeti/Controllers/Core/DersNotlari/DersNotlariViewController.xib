@@ -29,10 +29,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6U7-dH-EG7">
-                    <rect key="frame" x="20" y="97" width="350" height="90"/>
+                    <rect key="frame" x="20" y="97" width="350" height="85.333333333333314"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-wb-Xxs">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="85.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-traffic-light-48" imagePlacement="top" title="Trafik İşaretleri" imagePadding="8">
@@ -43,7 +43,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECg-sn-Mbn">
-                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="85.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-police-48" imagePlacement="top" title="Polis İşaretleri" imagePadding="8">
@@ -54,12 +54,9 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="0gO-Dk-TMP"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OQo-sv-ahZ">
-                    <rect key="frame" x="20" y="207.00000000000003" width="350" height="102.33333333333334"/>
+                    <rect key="frame" x="20" y="202.33333333333334" width="350" height="102.33333333333334"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrD-Or-Lxo">
                             <rect key="frame" x="0.0" y="0.0" width="165" height="102.33333333333333"/>
@@ -85,15 +82,12 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="WBT-Ej-gO3"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-NZ-7Xm">
-                    <rect key="frame" x="20" y="329.33333333333331" width="350" height="90"/>
+                    <rect key="frame" x="20" y="324.66666666666669" width="350" height="98.333333333333314"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-to-xDi">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="98.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-maximum-speed-48" imagePlacement="top" title="Levhalar" imagePadding="8">
@@ -104,7 +98,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7w-c1-kq3">
-                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="98.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-warning-48" imagePlacement="top" title="Trafik Kuralları Ve Çevre Bilgisi" subtitle="" imagePadding="6">
@@ -116,15 +110,12 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="dZs-XP-BTq"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-ld-DSQ">
-                    <rect key="frame" x="20" y="439.33333333333331" width="350" height="89.999999999999943"/>
+                    <rect key="frame" x="20" y="443" width="350" height="85.333333333333371"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn4-jB-gxX">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="85.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-traffic-jam-48" imagePlacement="top" title="Trafik Adabı" imagePadding="8">
@@ -135,7 +126,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-Nd-iGa">
-                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="85.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-car-service-48" imagePlacement="top" title="Araç Tekniği" imagePadding="8">
@@ -146,15 +137,12 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="zfB-WE-0ES"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pLK-ic-iXl">
-                    <rect key="frame" x="20" y="549.33333333333337" width="350" height="90"/>
+                    <rect key="frame" x="20" y="548.33333333333337" width="350" height="88.333333333333371"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-Kw-oc4">
-                            <rect key="frame" x="0.0" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="0.0" y="0.0" width="165" height="88.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-test-passed-48" imagePlacement="top" title="Sınav Hakkında" imagePadding="8">
@@ -165,7 +153,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOY-bp-io3">
-                            <rect key="frame" x="185" y="0.0" width="165" height="90"/>
+                            <rect key="frame" x="185" y="0.0" width="165" height="88.333333333333329"/>
                             <color key="backgroundColor" name="ButtonBackground"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="icons8-get-help-48" imagePlacement="top" title="Sık Sorulan Sorular" imagePadding="1">
@@ -177,26 +165,28 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="Ni2-dl-0xe"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="MainBackground"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JUG-ld-DSQ" secondAttribute="trailing" constant="20" id="2Ke-Pj-aRJ"/>
+                <constraint firstItem="pLK-ic-iXl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.10466" id="6fd-L6-bpO"/>
                 <constraint firstItem="1eG-NZ-7Xm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Dce-kg-EPy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pLK-ic-iXl" secondAttribute="trailing" constant="20" id="Ekp-nI-oSt"/>
                 <constraint firstItem="OQo-sv-ahZ" firstAttribute="top" secondItem="6U7-dH-EG7" secondAttribute="bottom" constant="20" id="GN2-e4-7Zw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6U7-dH-EG7" secondAttribute="trailing" constant="20" id="Hqn-6R-bKf"/>
+                <constraint firstItem="1eG-NZ-7Xm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.116509" id="JCP-Yb-InS"/>
                 <constraint firstItem="JUG-ld-DSQ" firstAttribute="top" secondItem="1eG-NZ-7Xm" secondAttribute="bottom" constant="20" id="M6e-0x-Lid"/>
                 <constraint firstItem="6U7-dH-EG7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Qgt-pD-3jD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1eG-NZ-7Xm" secondAttribute="trailing" constant="20" id="WUB-fU-gS5"/>
+                <constraint firstItem="OQo-sv-ahZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.121248" id="WqL-vX-ER7"/>
                 <constraint firstItem="pLK-ic-iXl" firstAttribute="top" secondItem="JUG-ld-DSQ" secondAttribute="bottom" constant="20" id="bUu-0a-1p2"/>
                 <constraint firstItem="OQo-sv-ahZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hlf-bt-jgh"/>
                 <constraint firstItem="JUG-ld-DSQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kyN-lx-RrY"/>
                 <constraint firstItem="6U7-dH-EG7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="liU-3j-rFs"/>
+                <constraint firstItem="6U7-dH-EG7" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.101106" id="muH-1L-9vP"/>
+                <constraint firstItem="JUG-ld-DSQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.101106" id="uDo-gO-YPa"/>
                 <constraint firstItem="pLK-ic-iXl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="viO-do-kTK"/>
                 <constraint firstItem="1eG-NZ-7Xm" firstAttribute="top" secondItem="OQo-sv-ahZ" secondAttribute="bottom" constant="20" id="yPh-0H-9EO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OQo-sv-ahZ" secondAttribute="trailing" constant="20" id="yy9-eo-0cC"/>
