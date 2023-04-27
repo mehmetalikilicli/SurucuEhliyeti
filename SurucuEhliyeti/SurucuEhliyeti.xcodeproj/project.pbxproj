@@ -48,6 +48,8 @@
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
 		17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */; };
+		17FF32FE29FA594F0050D855 /* IcerikDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF32FC29FA594F0050D855 /* IcerikDetayViewController.swift */; };
+		17FF32FF29FA594F0050D855 /* IcerikDetayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FF32FD29FA594F0050D855 /* IcerikDetayViewController.xib */; };
 		7AD1DD5929F96FE300EBBD19 /* BolumIcerikleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1DD5829F96FE300EBBD19 /* BolumIcerikleriVeri.swift */; };
 		7AFA2D6929F8066D00214550 /* TarafikIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */; };
 		7AFA2D6A29F8066D00214550 /* TarafikIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */; };
@@ -93,6 +95,8 @@
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
 		17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriVeri.swift; sourceTree = "<group>"; };
+		17FF32FC29FA594F0050D855 /* IcerikDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcerikDetayViewController.swift; sourceTree = "<group>"; };
+		17FF32FD29FA594F0050D855 /* IcerikDetayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IcerikDetayViewController.xib; sourceTree = "<group>"; };
 		7AD1DD5829F96FE300EBBD19 /* BolumIcerikleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolumIcerikleriVeri.swift; sourceTree = "<group>"; };
 		7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarafikIsaretleriViewController.swift; sourceTree = "<group>"; };
 		7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarafikIsaretleriViewController.xib; sourceTree = "<group>"; };
@@ -315,6 +319,7 @@
 		17DC335529ACDC2800DD16EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17FF32FB29FA59330050D855 /* IcerikDetay */,
 				177C2C6029F950F10035E47D /* IcerikTableView */,
 				177F79BB29F0054E00C3C92F /* PopUp */,
 				17DC334329ACDB6C00DD16EC /* SceneDelegate.swift */,
@@ -377,6 +382,15 @@
 				17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */,
 			);
 			path = AnaSayfa;
+			sourceTree = "<group>";
+		};
+		17FF32FB29FA59330050D855 /* IcerikDetay */ = {
+			isa = PBXGroup;
+			children = (
+				17FF32FC29FA594F0050D855 /* IcerikDetayViewController.swift */,
+				17FF32FD29FA594F0050D855 /* IcerikDetayViewController.xib */,
+			);
+			path = IcerikDetay;
 			sourceTree = "<group>";
 		};
 		7AFA2D6629F8063E00214550 /* TrafikIsaretleri */ = {
@@ -481,6 +495,7 @@
 				1718737229AE331100D6CABC /* AnaSayfaStroyBoard.storyboard in Resources */,
 				17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */,
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
+				17FF32FF29FA594F0050D855 /* IcerikDetayViewController.xib in Resources */,
 				1796BE6D29EEB594009E45D7 /* AGPIViewController.xib in Resources */,
 				1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */,
 			);
@@ -508,6 +523,7 @@
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
+				17FF32FE29FA594F0050D855 /* IcerikDetayViewController.swift in Sources */,
 				177C2C6729F9517E0035E47D /* IcerikTableViewCell.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
 				7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */,
