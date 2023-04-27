@@ -9,7 +9,7 @@ import Foundation
 
 struct bolumIcerikleri{
     var id: Int
+    var bolumUrl: URL
     var bolumTitle: String
     var bolumDescription: String
-    var bolumUrl: URL
 }
