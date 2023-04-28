@@ -28,7 +28,12 @@ class DersNotlariViewController: UIViewController {
  
     private func setupView(){
         trafikIsaretleriButton.layer.cornerRadius = 12.0
+        //trafikIsaretleriButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        //trafikIsaretleriButton.titleLabel?.minimumScaleFactor = 0.5
         polisIsaretleriButton.layer.cornerRadius = 12.0
+        //polisIsaretleriButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        //polisIsaretleriButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        //polisIsaretleriButton.titleLabel?.minimumScaleFactor = 0.5
         AGPIButton.layer.cornerRadius = 12.0
         ilkYardimButton.layer.cornerRadius = 12.0
         levhalarButton.layer.cornerRadius = 12.0
