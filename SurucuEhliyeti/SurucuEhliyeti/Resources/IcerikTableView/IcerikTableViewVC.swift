@@ -42,7 +42,9 @@ extension IcerikTableViewVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let icerikDetayVC = IcerikDetayViewController()
+        icerikDetayVC.bolumDetay = bolumListesi[indexPath.row]
+        self.navigationController?.pushViewController(icerikDetayVC, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
