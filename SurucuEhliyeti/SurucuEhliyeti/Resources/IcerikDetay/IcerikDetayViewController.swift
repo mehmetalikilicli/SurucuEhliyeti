@@ -8,11 +8,12 @@
 import UIKit
 import WebKit
 
-class IcerikDetayViewController: UIViewController {
+class IcerikDetayViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var icerikDetayBolumIsmi: UILabel!
     @IBOutlet weak var youtubeWebView: WKWebView!
     @IBOutlet weak var icerikDetayBolumAciklamasi: UILabel!
+    @IBOutlet weak var activityInd: UIActivityIndicatorView!
     
     var bolumDetay : bolum!
     
@@ -29,7 +30,21 @@ class IcerikDetayViewController: UIViewController {
         guard let url = URL(string: bolumDetay.bolumUrl) else {
             return
         }
+        
         youtubeWebView.load(URLRequest(url: url))
+        youtubeWebView.addSubview(activityInd)
+        activityInd.startAnimating()
+        
+        youtubeWebView.navigationDelegate = self
+        activityInd.hidesWhenStopped = true
     }
     
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activityInd.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        activityInd.stopAnimating()
+    }
 }
