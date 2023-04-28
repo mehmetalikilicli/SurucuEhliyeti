@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IcerikDetayViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
+                <outlet property="icerikDetayBolumAciklamasi" destination="02M-Za-VYM" id="Gui-ew-BHD"/>
+                <outlet property="icerikDetayBolumIsmi" destination="n62-jI-Yi3" id="GEm-p3-ZP9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="youtubeWebView" destination="ymt-hC-bav" id="6n7-YJ-alX"/>
             </connections>
@@ -30,13 +32,35 @@
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n62-jI-Yi3">
+                    <rect key="frame" x="16" y="288" width="358" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Rxb-K5-Uz4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02M-Za-VYM">
+                    <rect key="frame" x="16" y="330" width="358" height="480"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n62-jI-Yi3" secondAttribute="trailing" constant="16" id="06h-7A-93X"/>
                 <constraint firstItem="ymt-hC-bav" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7JB-FK-wvU"/>
                 <constraint firstItem="ymt-hC-bav" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9EY-21-7hT"/>
+                <constraint firstItem="02M-Za-VYM" firstAttribute="top" secondItem="n62-jI-Yi3" secondAttribute="bottom" constant="8" symbolic="YES" id="Gyw-Rm-Tn5"/>
+                <constraint firstItem="n62-jI-Yi3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="R8l-y1-2gK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ymt-hC-bav" secondAttribute="trailing" constant="16" id="lhX-3I-AG7"/>
+                <constraint firstItem="02M-Za-VYM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ni8-JT-X2S"/>
+                <constraint firstItem="02M-Za-VYM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="okq-Bb-pyM"/>
+                <constraint firstItem="n62-jI-Yi3" firstAttribute="top" secondItem="ymt-hC-bav" secondAttribute="bottom" constant="20" id="wjT-fo-I8R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="02M-Za-VYM" secondAttribute="trailing" constant="16" id="zCT-H2-vwY"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
         </view>

@@ -10,21 +10,26 @@ import WebKit
 
 class IcerikDetayViewController: UIViewController {
     
+    @IBOutlet weak var icerikDetayBolumIsmi: UILabel!
     @IBOutlet weak var youtubeWebView: WKWebView!
+    @IBOutlet weak var icerikDetayBolumAciklamasi: UILabel!
+    
+    var bolumDetay : bolum!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        guard let url = URL(string: "https://www.youtube.com/embed/p65xpknb1HA") else {
-            return
-        }
-        youtubeWebView.load(URLRequest(url: url))
-        
         configure()
     }
     
     func configure(){
-
+        
+        self.icerikDetayBolumIsmi.text = bolumDetay.bolumIsmi
+        self.icerikDetayBolumAciklamasi.text = bolumDetay.bolumAciklama
+        
+        guard let url = URL(string: bolumDetay.bolumUrl) else {
+            return
+        }
+        youtubeWebView.load(URLRequest(url: url))
     }
     
 }

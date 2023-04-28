@@ -36,7 +36,10 @@ extension IcerikTableViewVC : UITableViewDelegate, UITableViewDataSource {
         cell.icerikBolumLabel.text = bolumListesi[indexPath.row].bolumIsmi
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let icerikDetayVC = IcerikDetayViewController()
+        icerikDetayVC.bolumDetay = bolumListesi[indexPath.row]
+        self.navigationController?.pushViewController(icerikDetayVC, animated: true)
     }
 }

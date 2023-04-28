@@ -9,7 +9,9 @@ import Foundation
 
 struct bolum {
     var id: Int
+    var bolumUrl: String
     var bolumIsmi : String
+    var bolumAciklama: String
 }
 
 class ilkYardimBolumler {
@@ -18,9 +20,9 @@ class ilkYardimBolumler {
     func getIlkYardimBolumler() -> [bolum] {
         
         let ilkYardimBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "İlkyardımın Tanımı ve Önemi"),
-            bolum(id: 2, bolumIsmi: "İnsan Vücudu"),
-            bolum(id: 3, bolumIsmi: "Temel Yaşam Desteği, Solunum Ve Kapl Durması"),
+            bolum(id: 1,bolumUrl: "https://www.youtube.com/embed/fa2mC0FsKVA", bolumIsmi: "İlkyardımın Tanımı ve Önemi", bolumAciklama: "Bu Sayfa İlkyardımın Tanımı ve Önemi Sayfasıdır."),
+            bolum(id: 2, bolumUrl: "https://www.youtube.com/embed/AwWIsWCig0k", bolumIsmi: "İnsan Vücudu", bolumAciklama: "Bu Sayfa İnsan Vücudu Sayfasıdır."),
+            /*bolum(id: 3, bolumIsmi: "Temel Yaşam Desteği, Solunum Ve Kapl Durması"),
             bolum(id: 4, bolumIsmi: "Suni Solunum Uygulamaları"),
             bolum(id: 5, bolumIsmi: "Kanamalar Ve Yaralanmalar"),
             bolum(id: 6, bolumIsmi: "Şok, Bayılma Ve Komada İlkyardım"),
@@ -29,6 +31,7 @@ class ilkYardimBolumler {
             bolum(id: 9, bolumIsmi: "Bilinç Bozukluklarında İlkyardım"),
             bolum(id: 10, bolumIsmi: "Yaralının Taşımaya Hazırlanması Ve Taşıma"),
             bolum(id: 11, bolumIsmi: "Yaralıları Taşıma Yöntemleri"),
+             */
         ]
         return ilkYardimBolumler
     }
@@ -41,7 +44,7 @@ class TKVCBBolumler {
     func getTKVCBBolumler() -> [bolum] {
         
         let TKVCBBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "Davraış Psikolojisi Ve Temel Karamlar"),
+           /* bolum(id: 1, bolumIsmi: "Davraış Psikolojisi Ve Temel Karamlar"),
             bolum(id: 2, bolumIsmi: "Trafik Psikolojisi"),
             bolum(id: 3, bolumIsmi: "Trafikle İlgili Kurullar Kuruluşlar Ve Komisyonlar"),
             bolum(id: 4, bolumIsmi: "Trafik Karayolu Ve Araçlarla İlgili Tanımlar"),
@@ -81,7 +84,7 @@ class TKVCBBolumler {
             bolum(id: 38, bolumIsmi: "Araçlarda Bulundurulması Gereken Techizat"),
             bolum(id: 39, bolumIsmi: "Çevre bilgisi"),
             bolum(id: 40, bolumIsmi: "Harita Bilgisi"),
-            
+            */
         ]
         return TKVCBBolumler
     }
@@ -93,10 +96,11 @@ class trafikAdabiBolumler {
     func gettrafikAdabiBolumler() -> [bolum] {
         
         let trafikAdabiBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "Trafikte Temel Değerler"),
+            /*bolum(id: 1, bolumIsmi: "Trafikte Temel Değerler"),
             bolum(id: 2, bolumIsmi: "Trafikte Empati Ve İletişim"),
             bolum(id: 3, bolumIsmi: "Trafikte Hak İhlalleri"),
             bolum(id: 4, bolumIsmi: "Trafikte Diğerlerinin Sürücü Davranışlarına Etkisi"),
+             */
         ]
         return trafikAdabiBolumler
     }
@@ -108,7 +112,7 @@ class aracTeknigiBolumler {
     func getaracTeknigiBolumler() -> [bolum] {
         
         let aracTeknigiBolumler : [bolum] = [
-            bolum(id: 1, bolumIsmi: "Araç Tekniği"),
+         /*   bolum(id: 1, bolumIsmi: "Araç Tekniği"),
             bolum(id: 2, bolumIsmi: "Motorun Ve Aracın Sistemleri"),
             bolum(id: 3, bolumIsmi: "Araca Binmeden Önce Yapılması Gerekenler"),
             bolum(id: 4, bolumIsmi: "Aracın Çalıştırılması"),
@@ -119,6 +123,7 @@ class aracTeknigiBolumler {
             bolum(id: 9, bolumIsmi: "Lastikler"),
             bolum(id: 10, bolumIsmi: "Aracın Durdurulması Gereken Haller"),
             bolum(id: 11, bolumIsmi: "Yakıt Tasarrufu"),
+          */
         ]
         return aracTeknigiBolumler
     }
