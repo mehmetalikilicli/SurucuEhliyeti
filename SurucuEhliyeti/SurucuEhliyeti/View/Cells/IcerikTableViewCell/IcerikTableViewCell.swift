@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IcerikTableViewCell: UITableViewCell {
+final class IcerikTableViewCell: UITableViewCell {
 
     @IBOutlet weak var icerikBolumLabel: UILabel!
     

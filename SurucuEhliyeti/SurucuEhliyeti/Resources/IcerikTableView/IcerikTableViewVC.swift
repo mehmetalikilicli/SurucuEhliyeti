@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IcerikTableViewVC: UIViewController {
+final class IcerikTableViewVC: UIViewController {
     
     var bolumListesi: [bolum]!
     
@@ -15,10 +15,14 @@ class IcerikTableViewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        IcerikTableView.register(UINib(nibName: "IcerikTableViewCell", bundle: nil), forCellReuseIdentifier: "IcerikTableViewCell")
-
+        configureTableView()
+    }
+    
+    private func configureTableView(){
         IcerikTableView.delegate = self
         IcerikTableView.dataSource = self
+        IcerikTableView.register(UINib(nibName: "IcerikTableViewCell", bundle: nil), forCellReuseIdentifier: "IcerikTableViewCell")
+        IcerikTableView.estimatedRowHeight = UITableView.automaticDimension
     }
     
     func bolumleriAl(bolumListesi : [bolum]){
@@ -36,7 +40,11 @@ extension IcerikTableViewVC : UITableViewDelegate, UITableViewDataSource {
         cell.icerikBolumLabel.text = bolumListesi[indexPath.row].bolumIsmi
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
     }
 }

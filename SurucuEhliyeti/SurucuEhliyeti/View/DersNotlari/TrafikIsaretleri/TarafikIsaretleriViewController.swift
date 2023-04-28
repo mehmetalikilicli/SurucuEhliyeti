@@ -7,25 +7,31 @@
 
 import UIKit
 
-class TarafikIsaretleriViewController: UIViewController {
+final class TarafikIsaretleriViewController: UIViewController {
 
+    //MARK: Properties
     var popUp: PopUp!
     var trafikIsaretleriVeri : [TrafikIsaret]?
     
+    //MARK: Outlets
     @IBOutlet weak var trafikIsaretleriCollectionView: UICollectionView!
     
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configureTableView()
         getTrafikIsaretleriVeriler()
      
-        let nibName = UINib(nibName: "TrafikIsaretleriCollectionViewCell", bundle: nil)
-        self.trafikIsaretleriCollectionView.register(nibName, forCellWithReuseIdentifier: "TrafikIsaretleriCollectionViewCell")
-        
-        trafikIsaretleriCollectionView.delegate = self
-        trafikIsaretleriCollectionView.dataSource = self
     }
 
+    //MARK: Methods
+    private func configureTableView(){
+        trafikIsaretleriCollectionView.delegate = self
+        trafikIsaretleriCollectionView.dataSource = self
+        let nibName = UINib(nibName: "TrafikIsaretleriCollectionViewCell", bundle: nil)
+        self.trafikIsaretleriCollectionView.register(nibName, forCellWithReuseIdentifier: "TrafikIsaretleriCollectionViewCell")
+    }
     
     private func getTrafikIsaretleriVeriler(){
         let trafikIsaretVeriler = TrafikIsaretleriVeriler()
@@ -35,6 +41,7 @@ class TarafikIsaretleriViewController: UIViewController {
 
 }
 
+//MARK: Extensions
 extension TarafikIsaretleriViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
