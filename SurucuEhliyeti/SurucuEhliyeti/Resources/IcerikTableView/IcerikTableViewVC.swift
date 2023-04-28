@@ -38,6 +38,7 @@ extension IcerikTableViewVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IcerikTableViewCell", for: indexPath) as! IcerikTableViewCell
         cell.icerikBolumLabel.text = bolumListesi[indexPath.row].bolumIsmi
+
         return cell
     }
     
