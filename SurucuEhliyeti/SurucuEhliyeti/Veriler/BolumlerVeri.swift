@@ -23,7 +23,7 @@ class ilkYardimBolumler {
         
         let ilkYardimBolumler : [bolum] = [
             bolum(id: 1,bolumUrl: "https://www.youtube.com/embed/fa2mC0FsKVA", bolumIsmi: "İlkyardımın Tanımı ve Önemi", bolumAciklama: "Bu Sayfa İlkyardımın Tanımı ve Önemi Sayfasıdır."),
-            bolum(id: 2, bolumUrl: "https://www.youtube.com/embed/AwWIsWCig0k", bolumIsmi: "Temel Yaşam Desteği, Solunum Ve Kapl Durması", bolumAciklama: "Bu Sayfa İnsan Vücudu Sayfasıdır."),
+            bolum(id: 2, bolumUrl: "https://www.youtube.com/embed/AwWIsWCig0k", bolumIsmi: "Temel Yaşam Desteği, Solunum Ve Kalp Durması", bolumAciklama: "Bu Sayfa İnsan Vücudu Sayfasıdır."),
             bolum(id: 3, bolumUrl: "https://www.youtube.com/embed/pEksX32cjDQ", bolumIsmi: "İnsan Vücudu", bolumAciklama: "Bu Sayfa Temel Yaşam Desteği, Solunum Ve Kalp Durması Sayfasıdır."),
             bolum(id: 4, bolumUrl: "https://www.youtube.com/embed/_QWHrhiOHY4", bolumIsmi: "Suni Solunum Uygulamaları", bolumAciklama: "Bu Sayfa Suni Solunum Uygulamaları Sayfasıdır."),
             bolum(id: 5, bolumUrl: "https://www.youtube.com/embed/DB72wpWMEqk", bolumIsmi: "Kanamalar Ve Yaralanmalar", bolumAciklama: "Bu Sayfa Kanamalar Ve Yaralanmalar Sayfasıdır."),
