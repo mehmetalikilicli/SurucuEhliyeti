@@ -47,6 +47,8 @@
 		17DC636A29E4C72200877988 /* DersNotlariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636829E4C72200877988 /* DersNotlariViewController.xib */; };
 		17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */; };
 		17DC636F29E4DC0200877988 /* AnaSayfaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */; };
+		17DE42732A00024D004B92A8 /* SinavHakkindaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DE42712A00024D004B92A8 /* SinavHakkindaViewController.swift */; };
+		17DE42742A00024D004B92A8 /* SinavHakkindaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DE42722A00024D004B92A8 /* SinavHakkindaViewController.xib */; };
 		17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */; };
 		17FF32FE29FA594F0050D855 /* IcerikDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF32FC29FA594F0050D855 /* IcerikDetayViewController.swift */; };
 		17FF32FF29FA594F0050D855 /* IcerikDetayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FF32FD29FA594F0050D855 /* IcerikDetayViewController.xib */; };
@@ -93,6 +95,8 @@
 		17DC636829E4C72200877988 /* DersNotlariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DersNotlariViewController.xib; sourceTree = "<group>"; };
 		17DC636C29E4DC0200877988 /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		17DC636D29E4DC0200877988 /* AnaSayfaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnaSayfaViewController.xib; sourceTree = "<group>"; };
+		17DE42712A00024D004B92A8 /* SinavHakkindaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinavHakkindaViewController.swift; sourceTree = "<group>"; };
+		17DE42722A00024D004B92A8 /* SinavHakkindaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinavHakkindaViewController.xib; sourceTree = "<group>"; };
 		17E4A6C929E8730800EE0991 /* PolisIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriVeri.swift; sourceTree = "<group>"; };
 		17FF32FC29FA594F0050D855 /* IcerikDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcerikDetayViewController.swift; sourceTree = "<group>"; };
 		17FF32FD29FA594F0050D855 /* IcerikDetayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IcerikDetayViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 		1771036029EEE12E00DE6E02 /* SinavHakkinda */ = {
 			isa = PBXGroup;
 			children = (
+				17DE42712A00024D004B92A8 /* SinavHakkindaViewController.swift */,
+				17DE42722A00024D004B92A8 /* SinavHakkindaViewController.xib */,
 			);
 			path = SinavHakkinda;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				17DC334B29ACDB6D00DD16EC /* Assets.xcassets in Resources */,
 				17FF32FF29FA594F0050D855 /* IcerikDetayViewController.xib in Resources */,
 				1796BE6D29EEB594009E45D7 /* AGPIViewController.xib in Resources */,
+				17DE42742A00024D004B92A8 /* SinavHakkindaViewController.xib in Resources */,
 				1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +525,7 @@
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */,
+				17DE42732A00024D004B92A8 /* SinavHakkindaViewController.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
 				17FF32FE29FA594F0050D855 /* IcerikDetayViewController.swift in Sources */,
 				177C2C6729F9517E0035E47D /* IcerikTableViewCell.swift in Sources */,
