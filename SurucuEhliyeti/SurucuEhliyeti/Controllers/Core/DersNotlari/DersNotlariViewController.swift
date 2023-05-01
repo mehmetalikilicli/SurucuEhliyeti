@@ -107,6 +107,11 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func sinavHakkindaButton(_ sender: Any) {
+        
+        let sinavHakkindaVC = SinavHakkindaViewController()
+        self.navigationController?.pushViewController(sinavHakkindaVC, animated: true)
+        
+        
         print("sinavHakkindaButton tiklandi.")
     }
     
