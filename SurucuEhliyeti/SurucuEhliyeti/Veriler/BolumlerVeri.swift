@@ -7,7 +7,6 @@
 
 import Foundation
 
-import Foundation
 
 struct bolum {
     var id: Int

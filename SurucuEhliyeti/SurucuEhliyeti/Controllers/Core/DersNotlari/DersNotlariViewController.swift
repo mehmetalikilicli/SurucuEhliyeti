@@ -116,6 +116,8 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func sikSorulanSorularButton(_ sender: Any) {
+        let sssVC = SSSViewController()
+        self.navigationController?.pushViewController(sssVC, animated: true)
         print("sikSorulanSorularButton tiklandi.")
     }
     
