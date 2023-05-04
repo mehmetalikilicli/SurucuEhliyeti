@@ -10,6 +10,7 @@ import UIKit
 final class TarafikIsaretleriViewController: UIViewController {
 
     //MARK: Properties
+    var isPopupOpen = false
     var popUp: PopUp!
     var trafikIsaretleriVeri : [TrafikIsaret]?
     
@@ -54,12 +55,30 @@ extension TarafikIsaretleriViewController: UICollectionViewDelegate, UICollectio
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.popUpButton.addTarget(self, action: #selector(popUpButtonTapped), for: .touchUpInside)
         self.popUp.setUpUI(image: trafikIsaretleriVeri![indexPath.row].trafikIsaretImage, label: trafikIsaretleriVeri![indexPath.row].trafikIsaret)
         self.view.addSubview(popUp)
+        isPopupOpen = true
+        //self.popUp.popUpButton.addTarget(self, action: #selector(popUpButtonTapped), for: .touchUpInside)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
-
-    @objc func popUpButtonTapped(){
-        popUp.removeFromSuperview()
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        if isPopupOpen {
+            popUp.removeFromSuperview()
+            isPopupOpen = false
+            sender.isEnabled = false
+        }
+    }
+    
+   /* @objc func popUpButtonTapped() {
+        if isPopupOpen {
+            popUp.removeFromSuperview()
+            isPopupOpen = false
+        }
+    }*/
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        isPopupOpen = false
     }
 }
