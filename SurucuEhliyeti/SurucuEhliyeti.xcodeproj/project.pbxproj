@@ -14,6 +14,8 @@
 		1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720DA8829F6AC8F00FEB2B9 /* PopUp.swift */; };
 		1729252A29F6B4CA0051CA95 /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1729252929F6B4CA0051CA95 /* PopUp.xib */; };
 		1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */; };
+		17519A3F2A05028C00C4887A /* SinavHakkindaVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */; };
+		17519A432A05513C00C4887A /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17519A422A05513C00C4887A /* String+Ext.swift */; };
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
 		1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */; };
 		1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */; };
@@ -71,6 +73,8 @@
 		1720DA8829F6AC8F00FEB2B9 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		1729252929F6B4CA0051CA95 /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
 		1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikIsaretleriVeri.swift; sourceTree = "<group>"; };
+		17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinavHakkindaVeri.swift; sourceTree = "<group>"; };
+		17519A422A05513C00C4887A /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				1729252B29F6CD160051CA95 /* TrafikIsaretleriVeri.swift */,
 				177C2C5A29F922CE0035E47D /* BolumlerVeri.swift */,
 				7A1FB0D62A017A0900CF20AF /* SSSVeri.swift */,
+				17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */,
 			);
 			path = Veriler;
 			sourceTree = "<group>";
@@ -173,6 +178,22 @@
 				17957A3A29E8488A0064FA01 /* AGPICell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		17519A402A05511700C4887A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				17519A412A05512C00C4887A /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		17519A412A05512C00C4887A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17519A422A05513C00C4887A /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1754BAED29E2C7CF00766776 /* DersNotlari */ = {
@@ -324,6 +345,7 @@
 				17DC336129ACE3B800DD16EC /* View */,
 				17DC335829ACDD3E00DD16EC /* Controllers */,
 				17DC335529ACDC2800DD16EC /* Resources */,
+				17519A402A05511700C4887A /* Utilities */,
 				17DC334C29ACDB6D00DD16EC /* LaunchScreen.storyboard */,
 				1754BAF029E2CE0600766776 /* GoogleService-Info.plist */,
 				17DC334A29ACDB6D00DD16EC /* Assets.xcassets */,
@@ -540,11 +562,13 @@
 				1706D05E29E81672002DC0F2 /* AracGostergePaneliVeri.swift in Sources */,
 				7A1FB0D72A017A0900CF20AF /* SSSVeri.swift in Sources */,
 				177C2C5B29F922CE0035E47D /* BolumlerVeri.swift in Sources */,
+				17519A432A05513C00C4887A /* String+Ext.swift in Sources */,
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
 				177C2C6329F951380035E47D /* IcerikTableViewVC.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */,
 				1796BE6C29EEB594009E45D7 /* AGPIViewController.swift in Sources */,
+				17519A3F2A05028C00C4887A /* SinavHakkindaVeri.swift in Sources */,
 				1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */,
 				7AFA2D6929F8066D00214550 /* TarafikIsaretleriViewController.swift in Sources */,
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SinavHakkindaViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
+                <outlet property="sinavHakkindaTableView" destination="cEg-is-z74" id="kDZ-Pj-ONl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,53 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-p7-HV2">
-                    <rect key="frame" x="0.0" y="47" width="390" height="797"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdn-P9-AoB">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaç Puan Almak Gerekiyor?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHb-6g-NAo">
-                                    <rect key="frame" x="16" y="32" width="358" height="26.333333333333329"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teorik sınav toplam 50 sorudan oluşmakta olup, her soru 2 puan üzerinden değerlendirilmesi yapılmaktadır. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-O8-Go9">
-                                    <rect key="frame" x="16" y="74.333333333333329" width="358" height="60.999999999999986"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="vHb-6g-NAo" firstAttribute="leading" secondItem="zdn-P9-AoB" secondAttribute="leading" constant="16" id="5e1-cQ-F3F"/>
-                                <constraint firstItem="hzb-O8-Go9" firstAttribute="leading" secondItem="zdn-P9-AoB" secondAttribute="leading" constant="16" id="5fv-J2-ZLy"/>
-                                <constraint firstItem="hzb-O8-Go9" firstAttribute="top" secondItem="vHb-6g-NAo" secondAttribute="bottom" constant="16" id="8go-IB-0LO"/>
-                                <constraint firstAttribute="height" constant="1200" id="GLl-Eh-j8C"/>
-                                <constraint firstItem="vHb-6g-NAo" firstAttribute="top" secondItem="zdn-P9-AoB" secondAttribute="top" constant="32" id="HjZ-4V-tGS"/>
-                                <constraint firstAttribute="trailing" secondItem="hzb-O8-Go9" secondAttribute="trailing" constant="16" id="K5S-mq-es3"/>
-                                <constraint firstAttribute="trailing" secondItem="vHb-6g-NAo" secondAttribute="trailing" constant="16" id="UEp-fV-Ni9"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="zdn-P9-AoB" secondAttribute="trailing" id="4hP-5l-Skm"/>
-                        <constraint firstAttribute="bottom" secondItem="zdn-P9-AoB" secondAttribute="bottom" id="I5i-fm-nmi"/>
-                        <constraint firstItem="zdn-P9-AoB" firstAttribute="top" secondItem="IWh-p7-HV2" secondAttribute="top" id="VXU-td-g20"/>
-                        <constraint firstItem="zdn-P9-AoB" firstAttribute="leading" secondItem="IWh-p7-HV2" secondAttribute="leading" id="o5L-Y4-gva"/>
-                    </constraints>
-                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cEg-is-z74">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zdn-P9-AoB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="19k-WY-Ge5"/>
-                <constraint firstAttribute="bottom" secondItem="IWh-p7-HV2" secondAttribute="bottom" id="5AB-o8-Vlr"/>
-                <constraint firstItem="IWh-p7-HV2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AQW-Rt-MWC"/>
-                <constraint firstItem="IWh-p7-HV2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MdO-WF-e7C"/>
-                <constraint firstItem="IWh-p7-HV2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kZt-Tu-Omd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cEg-is-z74" secondAttribute="bottom" id="EZJ-sv-hWZ"/>
+                <constraint firstItem="cEg-is-z74" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fMw-LL-F6T"/>
+                <constraint firstItem="cEg-is-z74" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sw0-Aa-wcN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cEg-is-z74" secondAttribute="trailing" id="wdh-Ed-c12"/>
             </constraints>
             <point key="canvasLocation" x="0.0" y="-12.085308056872037"/>
         </view>

@@ -18,7 +18,7 @@ class DersNotlariViewController: UIViewController {
     @IBOutlet weak var trafikAdabiButton: UIButton!
     @IBOutlet weak var aracTeknigiButton: UIButton!
     @IBOutlet weak var sinavHakkindaButton: UIButton!
-    @IBOutlet weak var sikSorulanSorularButton: UIButton!
+    @IBOutlet weak var SSSButton: UIButton!
     
    
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class DersNotlariViewController: UIViewController {
         trafikAdabiButton.layer.cornerRadius = 12.0
         aracTeknigiButton.layer.cornerRadius = 12.0
         sinavHakkindaButton.layer.cornerRadius = 12.0
-        sikSorulanSorularButton.layer.cornerRadius = 12.0
+        SSSButton.layer.cornerRadius = 12.0
         
     }
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
@@ -111,14 +111,14 @@ class DersNotlariViewController: UIViewController {
         let sinavHakkindaVC = SinavHakkindaViewController()
         self.navigationController?.pushViewController(sinavHakkindaVC, animated: true)
         
-        
         print("sinavHakkindaButton tiklandi.")
     }
     
-    @IBAction func sikSorulanSorularButton(_ sender: Any) {
+
+    @IBAction func SSSButton(_ sender: Any) {
         let sssVC = SSSViewController()
         self.navigationController?.pushViewController(sssVC, animated: true)
-        print("sikSorulanSorularButton tiklandi.")
+        print("SSSButton tiklandi.")
     }
     
 }

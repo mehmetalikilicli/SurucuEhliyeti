@@ -11,12 +11,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DersNotlariViewController" customModule="SurucuEhliyeti" customModuleProvider="target">
             <connections>
                 <outlet property="AGPIButton" destination="BrD-Or-Lxo" id="BCw-5U-Nxh"/>
+                <outlet property="SSSButton" destination="YOY-bp-io3" id="p8G-Dp-yOl"/>
                 <outlet property="TKVCBButton" destination="N7w-c1-kq3" id="f29-He-RLY"/>
                 <outlet property="aracTeknigiButton" destination="ifo-Nd-iGa" id="I7V-MH-S9Z"/>
                 <outlet property="ilkYardimButton" destination="gN1-rD-tLw" id="Oqy-Mv-krT"/>
                 <outlet property="levhalarButton" destination="Chs-to-xDi" id="SA9-O5-mXI"/>
                 <outlet property="polisIsaretleriButton" destination="ECg-sn-Mbn" id="6XN-Gj-bev"/>
-                <outlet property="sikSorulanSorularButton" destination="YOY-bp-io3" id="p8G-Dp-yOl"/>
                 <outlet property="sinavHakkindaButton" destination="UH1-Kw-oc4" id="Ldl-He-rxI"/>
                 <outlet property="trafikAdabiButton" destination="bn4-jB-gxX" id="HIL-w7-ceJ"/>
                 <outlet property="trafikIsaretleriButton" destination="gS5-wb-Xxs" id="nk0-lD-IM6"/>
@@ -177,7 +177,7 @@
                                 <color key="baseForegroundColor" name="TextColor"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="sikSorulanSorularButton:" destination="-1" eventType="touchUpInside" id="yrj-yj-h3D"/>
+                                <action selector="SSSButton:" destination="-1" eventType="touchUpInside" id="Ddy-tj-zzP"/>
                             </connections>
                         </button>
                     </subviews>
