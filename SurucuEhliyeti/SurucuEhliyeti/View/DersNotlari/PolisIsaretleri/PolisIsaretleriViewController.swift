@@ -9,6 +9,7 @@ import UIKit
 
 class PolisIsaretleriViewController: UIViewController {
     
+    var isPopupOpen = false
     var popUp: PopUp!
     var PolisIsaretleriVeri : [PolisIsaret]?
     
@@ -44,14 +45,26 @@ extension PolisIsaretleriViewController: UICollectionViewDelegate, UICollectionV
         cell.seUpCell(polisIsaret: PolisIsaretleriVeri![indexPath.row])
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.popUpButton.addTarget(self, action: #selector(popUpButtonTapped), for: .touchUpInside)
         self.popUp.setUpUI(image: PolisIsaretleriVeri![indexPath.row].polisIsaretImage, label: PolisIsaretleriVeri![indexPath.row].polisIsaret)
         self.view.addSubview(popUp)
+        isPopupOpen = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
-    
-    @objc func popUpButtonTapped(){
-        popUp.removeFromSuperview()
+
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        if isPopupOpen {
+            popUp.removeFromSuperview()
+            isPopupOpen = false
+            sender.isEnabled = false
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        isPopupOpen = false
     }
 }
+
+
