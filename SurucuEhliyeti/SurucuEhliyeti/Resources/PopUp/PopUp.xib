@@ -22,27 +22,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET7-FX-Kj9">
-                    <rect key="frame" x="16" y="117" width="358" height="529"/>
+                    <rect key="frame" x="16" y="187" width="358" height="300"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4vg-0G-wNg">
-                            <rect key="frame" x="79" y="8" width="200" height="200"/>
+                            <rect key="frame" x="104" y="14" width="150" height="150"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="200" id="ItC-9j-nu7"/>
-                                <constraint firstAttribute="height" constant="200" id="hv2-fd-jQz"/>
+                                <constraint firstAttribute="width" constant="150" id="ItC-9j-nu7"/>
+                                <constraint firstAttribute="height" constant="150" id="hv2-fd-jQz"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-fB-9Hi">
-                            <rect key="frame" x="8" y="216" width="342" height="305"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-fB-9Hi">
+                            <rect key="frame" x="8" y="172" width="342" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="342" id="L3I-e4-yUv"/>
-                                <constraint firstAttribute="height" constant="305" id="LFc-VC-Wzc"/>
+                                <constraint firstAttribute="height" constant="120" id="LFc-VC-Wzc"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qry-Ng-bE9">
-                            <rect key="frame" x="0.0" y="0.0" width="358" height="529"/>
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="300"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain"/>
@@ -51,17 +51,14 @@
                     <color key="backgroundColor" name="MainBackground"/>
                     <constraints>
                         <constraint firstItem="qry-Ng-bE9" firstAttribute="leading" secondItem="ET7-FX-Kj9" secondAttribute="leading" id="5eE-dG-5SJ"/>
-                        <constraint firstAttribute="trailing" secondItem="UmK-fB-9Hi" secondAttribute="trailing" constant="8" id="5pV-vr-r3c"/>
                         <constraint firstAttribute="trailing" secondItem="qry-Ng-bE9" secondAttribute="trailing" id="DOl-qB-xZy"/>
-                        <constraint firstAttribute="height" constant="529" id="Fuh-4J-ToY"/>
+                        <constraint firstAttribute="height" constant="300" id="Fuh-4J-ToY"/>
                         <constraint firstItem="UmK-fB-9Hi" firstAttribute="top" secondItem="4vg-0G-wNg" secondAttribute="bottom" constant="8" symbolic="YES" id="GI9-4l-mvq"/>
                         <constraint firstAttribute="bottom" secondItem="qry-Ng-bE9" secondAttribute="bottom" id="ILq-OW-Hyq"/>
-                        <constraint firstItem="4vg-0G-wNg" firstAttribute="top" secondItem="ET7-FX-Kj9" secondAttribute="top" constant="8" id="IkG-UD-Qcs"/>
-                        <constraint firstItem="UmK-fB-9Hi" firstAttribute="leading" secondItem="ET7-FX-Kj9" secondAttribute="leading" constant="8" id="JQg-3q-8OL"/>
+                        <constraint firstItem="4vg-0G-wNg" firstAttribute="centerX" secondItem="ET7-FX-Kj9" secondAttribute="centerX" id="KW4-fy-s95"/>
                         <constraint firstItem="qry-Ng-bE9" firstAttribute="top" secondItem="ET7-FX-Kj9" secondAttribute="top" id="X0E-36-fsQ"/>
-                        <constraint firstAttribute="trailing" secondItem="4vg-0G-wNg" secondAttribute="trailing" constant="79" id="hYA-jM-2Xz"/>
-                        <constraint firstItem="4vg-0G-wNg" firstAttribute="leading" secondItem="ET7-FX-Kj9" secondAttribute="leading" constant="79" id="i5w-lN-obs"/>
                         <constraint firstAttribute="bottom" secondItem="UmK-fB-9Hi" secondAttribute="bottom" constant="8" id="tka-u2-h2c"/>
+                        <constraint firstItem="UmK-fB-9Hi" firstAttribute="centerX" secondItem="ET7-FX-Kj9" secondAttribute="centerX" id="xip-2o-u8b"/>
                     </constraints>
                 </view>
             </subviews>
@@ -70,7 +67,7 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ET7-FX-Kj9" secondAttribute="trailing" constant="16" id="5zU-KW-he5"/>
                 <constraint firstItem="ET7-FX-Kj9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8rn-YV-rlO"/>
-                <constraint firstItem="ET7-FX-Kj9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="70" id="X0P-9U-hqe"/>
+                <constraint firstItem="ET7-FX-Kj9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="140" id="X0P-9U-hqe"/>
                 <constraint firstItem="ET7-FX-Kj9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cBL-ig-kfF"/>
             </constraints>
             <point key="canvasLocation" x="43.076923076923073" y="-11.374407582938389"/>
