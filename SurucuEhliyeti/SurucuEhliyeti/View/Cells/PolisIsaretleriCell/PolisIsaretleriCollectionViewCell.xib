@@ -18,15 +18,19 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arkaSisLamba" translatesAutoresizingMaskIntoConstraints="NO" id="JoA-ba-DEa">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JoA-ba-DEa" secondAttribute="height" multiplier="1:1" id="sOL-qz-oUM"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="JoA-ba-DEa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QtG-xQ-Kfa"/>
-                <constraint firstItem="JoA-ba-DEa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y5h-dS-GRX"/>
-                <constraint firstAttribute="trailing" secondItem="JoA-ba-DEa" secondAttribute="trailing" id="baf-gg-ZTn"/>
-                <constraint firstAttribute="bottom" secondItem="JoA-ba-DEa" secondAttribute="bottom" id="nKZ-vQ-pIF"/>
+                <constraint firstItem="JoA-ba-DEa" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="3je-FC-BYc"/>
+                <constraint firstItem="JoA-ba-DEa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NCf-Fq-qyR"/>
+                <constraint firstAttribute="bottom" secondItem="JoA-ba-DEa" secondAttribute="bottom" id="PAd-F2-ocw"/>
+                <constraint firstAttribute="trailing" secondItem="JoA-ba-DEa" secondAttribute="trailing" id="aEy-07-QAt"/>
+                <constraint firstItem="JoA-ba-DEa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iVa-C3-Rcs"/>
             </constraints>
             <size key="customSize" width="128" height="128"/>
             <connections>

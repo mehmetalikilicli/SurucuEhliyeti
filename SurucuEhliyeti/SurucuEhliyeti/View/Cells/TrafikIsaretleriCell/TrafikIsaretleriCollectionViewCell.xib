@@ -19,16 +19,20 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IsikliIsaretCihazi" translatesAutoresizingMaskIntoConstraints="NO" id="LLB-we-kRO">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LLB-we-kRO" secondAttribute="height" multiplier="1:1" id="zvU-lR-IbS"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="LLB-we-kRO" secondAttribute="trailing" id="8ev-gh-EM0"/>
-                <constraint firstAttribute="bottom" secondItem="LLB-we-kRO" secondAttribute="bottom" id="GEb-Uk-d13"/>
-                <constraint firstItem="LLB-we-kRO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X6t-3k-Osy"/>
-                <constraint firstItem="LLB-we-kRO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="emx-ib-zdV"/>
+                <constraint firstAttribute="trailing" secondItem="LLB-we-kRO" secondAttribute="trailing" id="09a-oR-Unr"/>
+                <constraint firstItem="LLB-we-kRO" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="Ild-pp-atl"/>
+                <constraint firstItem="LLB-we-kRO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PUJ-RI-UJg"/>
+                <constraint firstItem="LLB-we-kRO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TcC-jq-2Qf"/>
+                <constraint firstAttribute="bottom" secondItem="LLB-we-kRO" secondAttribute="bottom" id="YfP-Hd-m2r"/>
             </constraints>
             <size key="customSize" width="134" height="140"/>
             <connections>
