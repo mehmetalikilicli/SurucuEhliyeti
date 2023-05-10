@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AGPIViewController: UIViewController {
     
@@ -19,6 +20,7 @@ class AGPIViewController: UIViewController {
         super.viewDidLoad()
         
         getAGPIVeri()
+        getAGPIData()
         
         let nibName = UINib(nibName: "AGPICollectionViewCell", bundle: nil)
         self.AGPICollectionView.register(nibName, forCellWithReuseIdentifier: "AGPICollectionViewCell")
@@ -29,6 +31,35 @@ class AGPIViewController: UIViewController {
     
     private func getAGPIVeri(){
         AGPIVeri = AGPIVeriler.shared.getAracGostergePaneliVeriler()
+    }
+    private func getAGPIData(){
+        let firestoreDatabase = Firestore.firestore()
+        
+        firestoreDatabase.collection("AGPIDatas").addSnapshotListener { snapshot, error in
+            if error != nil{
+                print(error?.localizedDescription)
+            }else{
+                if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    for document in snapshot!.documents {
+                        if let agpiImage = document.get("agpiImage") as? String{
+                            print(agpiImage)
+                        }
+                        
+                        if let agpiText = document.get("agpiText") as? String{
+                            print(agpiText)
+                        }
+                        
+                        if let agpiId = document.get("id") as? String{
+                            print(agpiId)
+                        }
+                    
+                }
+                    
+                    self.AGPICollectionView.reloadData()
+                }
+            }
+        }
     }
 
 }
