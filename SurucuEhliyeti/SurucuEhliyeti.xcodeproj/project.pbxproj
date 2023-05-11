@@ -38,7 +38,7 @@
 		1796BE7129EEB6C4009E45D7 /* AGPICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1796BE6F29EEB6C4009E45D7 /* AGPICollectionViewCell.xib */; };
 		17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */; };
 		17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */; };
-		17BA14BD2A0B9EE100AA2330 /* getAGPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BA14BC2A0B9EE100AA2330 /* getAGPIData.swift */; };
+		17BA14BD2A0B9EE100AA2330 /* getAGPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BA14BC2A0B9EE100AA2330 /* getAGPIService.swift */; };
 		17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */; };
 		17CE466529E06058002369E8 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE466429E06058002369E8 /* MyViewController.swift */; };
 		17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC334129ACDB6C00DD16EC /* AppDelegate.swift */; };
@@ -92,7 +92,7 @@
 		1796BE6F29EEB6C4009E45D7 /* AGPICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AGPICollectionViewCell.xib; sourceTree = "<group>"; };
 		17984C2429E2EEA40030B5B3 /* PolisIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriViewController.swift; sourceTree = "<group>"; };
 		17984C2529E2EEA40030B5B3 /* PolisIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriViewController.xib; sourceTree = "<group>"; };
-		17BA14BC2A0B9EE100AA2330 /* getAGPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAGPIData.swift; sourceTree = "<group>"; };
+		17BA14BC2A0B9EE100AA2330 /* getAGPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAGPIService.swift; sourceTree = "<group>"; };
 		17CBD90B29AE1EE9006F2FBF /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		17CE466429E06058002369E8 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		17DC333E29ACDB6C00DD16EC /* SurucuEhliyeti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurucuEhliyeti.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,7 +286,7 @@
 		17BA14BB2A0B9EA200AA2330 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				17BA14BC2A0B9EE100AA2330 /* getAGPIData.swift */,
+				17BA14BC2A0B9EE100AA2330 /* getAGPIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -553,7 +553,7 @@
 				17DC636E29E4DC0200877988 /* AnaSayfaViewController.swift in Sources */,
 				17DC335729ACDCA200DD16EC /* MainTabBarViewController.swift in Sources */,
 				7A1FB0DA2A01B92600CF20AF /* SSSViewController.swift in Sources */,
-				17BA14BD2A0B9EE100AA2330 /* getAGPIData.swift in Sources */,
+				17BA14BD2A0B9EE100AA2330 /* getAGPIService.swift in Sources */,
 				17CBD90C29AE1EE9006F2FBF /* TestViewController.swift in Sources */,
 				1729252C29F6CD160051CA95 /* TrafikIsaretleriVeri.swift in Sources */,
 				17DE42732A00024D004B92A8 /* SinavHakkindaViewController.swift in Sources */,

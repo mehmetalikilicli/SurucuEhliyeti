@@ -12,14 +12,14 @@ class AGPIViewController: UIViewController {
     
     var isPopupOpen = false
     var popUp: PopUp!
-    var AGPIVeri : [AracGostergeIsaret]?
-
+    var AGPIVeri = [AracGostergeIsaret]()
+    
     @IBOutlet weak var AGPICollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getAGPIVeri()
+        //getAGPIVeri()
         getAGPIData()
         
         let nibName = UINib(nibName: "AGPICollectionViewCell", bundle: nil)
@@ -32,53 +32,33 @@ class AGPIViewController: UIViewController {
     private func getAGPIVeri(){
         AGPIVeri = AGPIVeriler.shared.getAracGostergePaneliVeriler()
     }
-    private func getAGPIData(){
-        let firestoreDatabase = Firestore.firestore()
-        
-        firestoreDatabase.collection("AGPIDatas").addSnapshotListener { snapshot, error in
-            if error != nil{
-                print(error?.localizedDescription)
-            }else{
-                if snapshot?.isEmpty != true && snapshot != nil {
-                    
-                    for document in snapshot!.documents {
-                        if let agpiImage = document.get("agpiImage") as? String{
-                            print(agpiImage)
-                        }
-                        
-                        if let agpiText = document.get("agpiText") as? String{
-                            print(agpiText)
-                        }
-                        
-                        if let agpiId = document.get("id") as? String{
-                            print(agpiId)
-                        }
-                    
-                }
-                    
-                    self.AGPICollectionView.reloadData()
-                }
-            }
-        }
-    }
 
+    
+    private func getAGPIData(){
+        
+            var AGPIService = AGPIService()
+            self.AGPIVeri = AGPIService.getAGPIData()
+            //print(self.AGPIVeri)
+            self.AGPICollectionView.reloadData()
+        
+    }
 }
 
 extension AGPIViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return AGPIVeri!.count
+        return AGPIVeri.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AGPICollectionViewCell", for: indexPath) as! AGPICollectionViewCell
-        cell.AGPICellImageView.image = UIImage(named: "\(AGPIVeri![indexPath.row].aracGostergeImage)")
-        //cell.setUpCell(aracGostergeIsaret: AGPIVeri![indexPath.row])
+        
+        cell.setUpCell(aracGostergeIsaret: AGPIVeri[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.setUpUI(image: AGPIVeri![indexPath.row].aracGostergeImage, label: AGPIVeri![indexPath.row].aracGosterge)
+        self.popUp.setUpUI(image: AGPIVeri[indexPath.row].aracGostergeImage, label: AGPIVeri[indexPath.row].aracGosterge)
         self.view.addSubview(popUp)
         isPopupOpen = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
@@ -104,7 +84,7 @@ extension AGPIViewController : UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let bounds = collectionView.bounds
         let heightVal = self.view.frame.height
         let widthVal = self.view.frame.width
