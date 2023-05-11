@@ -24,9 +24,25 @@ class PopUp: UIView {
         popUpView.layer.cornerRadius = 20
         popUpButton.layer.cornerRadius = 20
     }
+    
     func setUpUI(image: String, label: String){
-        popUpImageView.image = UIImage(named: "\(image)")
+        
+        if let url = URL(string: "\(image)") {
+            getData(from: url) { data, response, error in
+                guard let data = data, error == nil else { return }
+                print(response?.suggestedFilename ?? url.lastPathComponent)
+                
+                // always update the UI from the main thread
+                DispatchQueue.main.async() { [weak self] in
+                    self?.popUpImageView.image = UIImage(data: data)
+                }
+            }
+        }
         popUpLabel.text = label
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
     
     func xibSetup(frame: CGRect){
