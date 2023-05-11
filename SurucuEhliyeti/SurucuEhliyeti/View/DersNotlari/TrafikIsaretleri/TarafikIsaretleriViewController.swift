@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 final class TarafikIsaretleriViewController: UIViewController {
 
     //MARK: Properties
     var isPopupOpen = false
     var popUp: PopUp!
-    var trafikIsaretleriVeri : [TrafikIsaret]?
+    var trafikIsaretleriVeri = [TrafikIsaret]()
     
     //MARK: Outlets
     @IBOutlet weak var trafikIsaretleriCollectionView: UICollectionView!
@@ -22,7 +23,8 @@ final class TarafikIsaretleriViewController: UIViewController {
         super.viewDidLoad()
         
         configureTableView()
-        getTrafikIsaretleriVeriler()
+        //getTrafikIsaretleriVeriler()
+        getTrafikIsaretleriData()
      
     }
 
@@ -38,8 +40,32 @@ final class TarafikIsaretleriViewController: UIViewController {
         let trafikIsaretVeriler = TrafikIsaretleriVeriler()
         trafikIsaretleriVeri = trafikIsaretVeriler.getTrafikIsaretleriVeriler()
     }
-
-
+    
+    private func getTrafikIsaretleriData(){
+        let firestoreDatabase = Firestore.firestore()
+        
+        firestoreDatabase.collection("TrafikIsaretleriDatas").order(by: "id", descending: false).addSnapshotListener { snapshot, error in
+            if error != nil{
+                print(error?.localizedDescription)
+            }else{
+                if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    for document in snapshot!.documents {
+                        if let tfiImage = document.get("tfiImage") as? String{
+                            if let tfiText = document.get("tfiText") as? String{
+                                if let id = document.get("id") as? Int{
+                                    var firebaseTfi = TrafikIsaret(id: id, trafikIsaretImage: tfiImage, trafikIsaret: tfiText)
+                                    self.trafikIsaretleriVeri.append(firebaseTfi)
+                                }
+                            }
+                            
+                        }
+                    }
+                    self.trafikIsaretleriCollectionView.reloadData()
+                }
+            }
+        }
+    }
 }
 
 //MARK: Extensions
@@ -47,15 +73,15 @@ extension TarafikIsaretleriViewController: UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrafikIsaretleriCollectionViewCell", for: indexPath) as! TrafikIsaretleriCollectionViewCell
-        cell.setupCell(trafikIsaret: trafikIsaretleriVeri![indexPath.row])
+        cell.setupCell(trafikIsaret: trafikIsaretleriVeri[indexPath.row])
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return trafikIsaretleriVeri!.count
+        return trafikIsaretleriVeri.count
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.setUpUI(image: trafikIsaretleriVeri![indexPath.row].trafikIsaretImage, label: trafikIsaretleriVeri![indexPath.row].trafikIsaret)
+        self.popUp.setUpUI(image: trafikIsaretleriVeri[indexPath.row].trafikIsaretImage, label: trafikIsaretleriVeri[indexPath.row].trafikIsaret)
         self.view.addSubview(popUp)
         isPopupOpen = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))

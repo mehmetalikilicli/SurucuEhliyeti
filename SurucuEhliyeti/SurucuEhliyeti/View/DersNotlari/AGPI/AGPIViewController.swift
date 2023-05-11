@@ -32,16 +32,32 @@ class AGPIViewController: UIViewController {
     private func getAGPIVeri(){
         AGPIVeri = AGPIVeriler.shared.getAracGostergePaneliVeriler()
     }
-
+    
     
     private func getAGPIData(){
+        let firestoreDatabase = Firestore.firestore()
         
-            var AGPIService = AGPIService()
-            self.AGPIVeri = AGPIService.getAGPIData()
-            //print(self.AGPIVeri)
-            self.AGPICollectionView.reloadData()
-        
-    }
+        firestoreDatabase.collection("AGPIDatas").addSnapshotListener { snapshot, error in
+            if error != nil{
+                print(error?.localizedDescription)
+            }else{
+                if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    for document in snapshot!.documents {
+                        if let agpiImage = document.get("agpiImage") as? String{
+                            if let agpiText = document.get("agpiText") as? String{
+                                if let id = document.get("id") as? Int{
+                                    var firebaseAGPI = AracGostergeIsaret(id: id, aracGostergeImage: agpiImage, aracGosterge: agpiText)
+                                    self.AGPIVeri.append(firebaseAGPI)
+                                }
+                            }
+                        }
+                    }
+                    self.AGPICollectionView.reloadData()
+                }
+            }
+        }
+    }    
 }
 
 extension AGPIViewController : UICollectionViewDelegate, UICollectionViewDataSource {
