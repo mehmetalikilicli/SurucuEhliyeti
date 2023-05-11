@@ -6,19 +6,20 @@
 //
 
 import UIKit
+import Firebase
 
 class PolisIsaretleriViewController: UIViewController {
     
     var isPopupOpen = false
     var popUp: PopUp!
-    var PolisIsaretleriVeri : [PolisIsaret]?
+    var PolisIsaretleriVeri = [PolisIsaret]()
     
     @IBOutlet weak var polisIsaretleriCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getPolisIsaretVeriler()
+        getPolisIsaretData()
         
         
         let nibName = UINib(nibName: "PolisIsaretleriCollectionViewCell", bundle: nil)
@@ -33,22 +34,49 @@ class PolisIsaretleriViewController: UIViewController {
        let polisIsaretVeriler = PolisIsaretVeriler()
         PolisIsaretleriVeri = polisIsaretVeriler.getAPolisIsaretVeriler()
    }
+    
+    
+    private func getPolisIsaretData(){
+        let firestoreDatabase = Firestore.firestore()
+        
+        firestoreDatabase.collection("PolisIsaretleriDatas").order(by: "id", descending: false).addSnapshotListener { snapshot, error in
+            if error != nil{
+                print(error?.localizedDescription)
+            }else{
+                if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    for document in snapshot!.documents {
+                        if let piImage = document.get("piImage") as? String{
+                            if let piText = document.get("piText") as? String{
+                                if let id = document.get("id") as? Int{
+                                    var firebasePi = PolisIsaret(id: id, polisIsaretImage: piImage, polisIsaret: piText)
+                                    self.PolisIsaretleriVeri.append(firebasePi)
+                                }
+                            }
+                            
+                        }
+                    }
+                    self.polisIsaretleriCollectionView.reloadData()
+                }
+            }
+        }
+    }
 }
 
 extension PolisIsaretleriViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return PolisIsaretleriVeri!.count
+        return PolisIsaretleriVeri.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PolisIsaretleriCollectionViewCell", for: indexPath) as! PolisIsaretleriCollectionViewCell
-        cell.seUpCell(polisIsaret: PolisIsaretleriVeri![indexPath.row])
+        cell.seUpCell(polisIsaret: PolisIsaretleriVeri[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.setUpUI(image: PolisIsaretleriVeri![indexPath.row].polisIsaretImage, label: PolisIsaretleriVeri![indexPath.row].polisIsaret)
+        self.popUp.setUpUI(image: PolisIsaretleriVeri[indexPath.row].polisIsaretImage, label: PolisIsaretleriVeri[indexPath.row].polisIsaret)
         self.view.addSubview(popUp)
         isPopupOpen = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
