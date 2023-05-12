@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AcilanKopru" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-lM-1ro">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-lM-1ro">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="wbo-lM-1ro" secondAttribute="height" multiplier="1:1" id="EMh-el-amk"/>
@@ -40,6 +40,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="AcilanKopru" width="185" height="158"/>
+        <image name="default" width="600" height="600"/>
     </resources>
 </document>
