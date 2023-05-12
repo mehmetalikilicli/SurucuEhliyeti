@@ -17,6 +17,7 @@
 		17519A3F2A05028C00C4887A /* SinavHakkindaVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */; };
 		17519A432A05513C00C4887A /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17519A422A05513C00C4887A /* String+Ext.swift */; };
 		1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1754BAF029E2CE0600766776 /* GoogleService-Info.plist */; };
+		175C4C062A0E5FE300F46204 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C4C052A0E5FE300F46204 /* UIImageView+Ext.swift */; };
 		1771036529EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */; };
 		1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */; };
 		177C2C5B29F922CE0035E47D /* BolumlerVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2C5A29F922CE0035E47D /* BolumlerVeri.swift */; };
@@ -77,6 +78,7 @@
 		17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinavHakkindaVeri.swift; sourceTree = "<group>"; };
 		17519A422A05513C00C4887A /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		1754BAF029E2CE0600766776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		175C4C052A0E5FE300F46204 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		1771036329EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolisIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771036429EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolisIsaretleriCollectionViewCell.xib; sourceTree = "<group>"; };
 		177C2C5A29F922CE0035E47D /* BolumlerVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolumlerVeri.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				17519A422A05513C00C4887A /* String+Ext.swift */,
+				175C4C052A0E5FE300F46204 /* UIImageView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				17DE42732A00024D004B92A8 /* SinavHakkindaViewController.swift in Sources */,
 				17E4A6CA29E8730800EE0991 /* PolisIsaretleriVeri.swift in Sources */,
 				17FF32FE29FA594F0050D855 /* IcerikDetayViewController.swift in Sources */,
+				175C4C062A0E5FE300F46204 /* UIImageView+Ext.swift in Sources */,
 				177C2C6729F9517E0035E47D /* IcerikTableViewCell.swift in Sources */,
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
 				7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */,

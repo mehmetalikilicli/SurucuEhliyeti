@@ -27,17 +27,7 @@ class PopUp: UIView {
     
     func setUpUI(image: String, label: String){
         
-        if let url = URL(string: "\(image)") {
-            getData(from: url) { data, response, error in
-                guard let data = data, error == nil else { return }
-                print(response?.suggestedFilename ?? url.lastPathComponent)
-                
-                // always update the UI from the main thread
-                DispatchQueue.main.async() { [weak self] in
-                    self?.popUpImageView.image = UIImage(data: data)
-                }
-            }
-        }
+        popUpImageView.loadImageUsingCacheWithUrlString(urlString: image)
         popUpLabel.text = label
     }
     
