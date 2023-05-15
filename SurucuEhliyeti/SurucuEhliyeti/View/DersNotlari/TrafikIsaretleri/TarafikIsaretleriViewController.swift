@@ -25,7 +25,6 @@ final class TarafikIsaretleriViewController: UIViewController {
         configureTableView()
         //getTrafikIsaretleriVeriler()
         getTrafikIsaretleriData()
-     
     }
 
     //MARK: Methods
@@ -34,6 +33,8 @@ final class TarafikIsaretleriViewController: UIViewController {
         trafikIsaretleriCollectionView.dataSource = self
         let nibName = UINib(nibName: "TrafikIsaretleriCollectionViewCell", bundle: nil)
         self.trafikIsaretleriCollectionView.register(nibName, forCellWithReuseIdentifier: "TrafikIsaretleriCollectionViewCell")
+       
+        
     }
     
     private func getTrafikIsaretleriVeriler(){

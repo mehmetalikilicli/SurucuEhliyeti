@@ -42,8 +42,10 @@ class DersNotlariViewController: UIViewController {
         aracTeknigiButton.layer.cornerRadius = 12.0
         sinavHakkindaButton.layer.cornerRadius = 12.0
         SSSButton.layer.cornerRadius = 12.0
-        
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Geri")
     }
+    
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
         let trafikIsaretleriVC = TarafikIsaretleriViewController()
         self.navigationController?.pushViewController(trafikIsaretleriVC, animated: true)
@@ -122,3 +124,5 @@ class DersNotlariViewController: UIViewController {
     }
     
 }
+
+
