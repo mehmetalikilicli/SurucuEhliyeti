@@ -43,7 +43,7 @@ class DersNotlariViewController: UIViewController {
         sinavHakkindaButton.layer.cornerRadius = 12.0
         SSSButton.layer.cornerRadius = 12.0
         self.navigationController?.navigationBar.tintColor = .black
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Geri")
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Ders Notları")
     }
     
     @IBAction func trafikIsaretleriButton(_ sender: Any) {
