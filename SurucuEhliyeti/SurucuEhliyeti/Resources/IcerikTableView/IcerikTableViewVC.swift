@@ -23,6 +23,8 @@ final class IcerikTableViewVC: UIViewController {
         IcerikTableView.dataSource = self
         IcerikTableView.register(UINib(nibName: "IcerikTableViewCell", bundle: nil), forCellReuseIdentifier: "IcerikTableViewCell")
         IcerikTableView.estimatedRowHeight = UITableView.automaticDimension
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Geri")
+
     }
     
     func bolumleriAl(bolumListesi : [bolum]){
