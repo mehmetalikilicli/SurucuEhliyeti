@@ -37,7 +37,7 @@ class AGPIViewController: UIViewController {
     private func getAGPIData(){
         let firestoreDatabase = Firestore.firestore()
         
-        firestoreDatabase.collection("AGPIDatas").addSnapshotListener { snapshot, error in
+        firestoreDatabase.collection("AGPIDatas").order(by: "id", descending: false).addSnapshotListener { snapshot, error in
             if error != nil{
                 print(error?.localizedDescription)
             }else{
