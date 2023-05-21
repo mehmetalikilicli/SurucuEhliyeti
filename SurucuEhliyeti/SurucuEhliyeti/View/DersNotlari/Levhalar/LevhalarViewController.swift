@@ -1,88 +1,84 @@
 //
-//  TarafikIsaretleriViewController.swift
+//  LevhalarViewController.swift
 //  SurucuEhliyeti
 //
-//  Created by Ahsen Bahtışen on 25.04.2023.
+//  Created by Ahsen Bahtışen on 21.05.2023.
 //
 
 import UIKit
 import Firebase
 
-final class TarafikIsaretleriViewController: UIViewController {
-
+final class LevhalarViewController: UIViewController {
+    
     //MARK: Properties
     var isPopupOpen = false
     var popUp: PopUp!
-    var trafikIsaretleriVeri = [TrafikIsaret]()
-    
+    var LevhaVeri = [Levha]()
+
     //MARK: Outlets
-    @IBOutlet weak var trafikIsaretleriCollectionView: UICollectionView!
+    @IBOutlet weak var LevhalarCollectionView: UICollectionView!
     
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configureCollectionView()
-        //getTrafikIsaretleriVeriler()
-        getTrafikIsaretleriData()
-    }
 
+        getLevhaData()
+        configureCollectionView()
+
+    }
+    
     //MARK: Methods
     private func configureCollectionView(){
-        trafikIsaretleriCollectionView.delegate = self
-        trafikIsaretleriCollectionView.dataSource = self
-        let nibName = UINib(nibName: "TrafikIsaretleriCollectionViewCell", bundle: nil)
-        self.trafikIsaretleriCollectionView.register(nibName, forCellWithReuseIdentifier: "TrafikIsaretleriCollectionViewCell")
-       
-        
+        LevhalarCollectionView.dataSource = self
+        LevhalarCollectionView.delegate = self
+        let nibName = UINib(nibName: "LevhalarCollectionViewCell", bundle: nil)
+        self.LevhalarCollectionView.register(nibName, forCellWithReuseIdentifier: "LevhalarCollectionViewCell")
     }
     
-    private func getTrafikIsaretleriVeriler(){
-        let trafikIsaretVeriler = TrafikIsaretleriVeriler()
-        trafikIsaretleriVeri = trafikIsaretVeriler.getTrafikIsaretleriVeriler()
-    }
-    
-    private func getTrafikIsaretleriData(){
+    private func getLevhaData(){
         let firestoreDatabase = Firestore.firestore()
         
-        firestoreDatabase.collection("TrafikIsaretleriDatas").order(by: "id", descending: false).addSnapshotListener { snapshot, error in
+        firestoreDatabase.collection("LevhalarDatas").order(by: "id", descending: false).addSnapshotListener { snapshot, error in
             if error != nil{
                 print(error?.localizedDescription)
             }else{
                 if snapshot?.isEmpty != true && snapshot != nil {
                     
                     for document in snapshot!.documents {
-                        if let tfiImage = document.get("tfiImage") as? String{
-                            if let tfiText = document.get("tfiText") as? String{
+                        if let lImage = document.get("lImage") as? String{
+                            if let lText = document.get("lText") as? String{
                                 if let id = document.get("id") as? Int{
-                                    var firebaseTfi = TrafikIsaret(id: id, trafikIsaretImage: tfiImage, trafikIsaret: tfiText)
-                                    self.trafikIsaretleriVeri.append(firebaseTfi)
+                                    var firebaseL = Levha(id: id, levhaImage: lImage, levha: lText)
+                                    self.LevhaVeri.append(firebaseL)
                                 }
                             }
-                            
                         }
                     }
-                    self.trafikIsaretleriCollectionView.reloadData()
+                    self.LevhalarCollectionView.reloadData()
                 }
             }
         }
     }
+
 }
 
 //MARK: Extensions
-extension TarafikIsaretleriViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension LevhalarViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return LevhaVeri.count
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrafikIsaretleriCollectionViewCell", for: indexPath) as! TrafikIsaretleriCollectionViewCell
-        cell.setupCell(trafikIsaret: trafikIsaretleriVeri[indexPath.row])
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LevhalarCollectionViewCell", for: indexPath) as! LevhalarCollectionViewCell
+        
+        cell.setUpCell(levha: LevhaVeri[indexPath.row])
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return trafikIsaretleriVeri.count
-    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.popUp = PopUp(frame: self.view.frame)
-        self.popUp.setUpUI(image: trafikIsaretleriVeri[indexPath.row].trafikIsaretImage, label: trafikIsaretleriVeri[indexPath.row].trafikIsaret)
+        self.popUp.setUpUI(image: LevhaVeri[indexPath.row].levhaImage, label: LevhaVeri[indexPath.row].levha)
         self.view.addSubview(popUp)
         isPopupOpen = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
@@ -96,20 +92,19 @@ extension TarafikIsaretleriViewController: UICollectionViewDelegate, UICollectio
             sender.isEnabled = false
         }
     }
-    
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         isPopupOpen = false
     }
 }
 
-extension TarafikIsaretleriViewController : UICollectionViewDelegateFlowLayout{
+extension LevhalarViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let bounds = collectionView.bounds
         let heightVal = self.view.frame.height
         let widthVal = self.view.frame.width
@@ -125,5 +120,4 @@ extension TarafikIsaretleriViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         10
     }
-    
 }

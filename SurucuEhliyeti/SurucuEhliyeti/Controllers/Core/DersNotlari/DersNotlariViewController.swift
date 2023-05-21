@@ -75,6 +75,8 @@ class DersNotlariViewController: UIViewController {
     }
     
     @IBAction func levhalarButton(_ sender: Any) {
+        let levhalarVC = LevhalarViewController()
+        self.navigationController?.pushViewController(levhalarVC, animated: true)
         print("levhalarButton tiklandi.")
     }
     
