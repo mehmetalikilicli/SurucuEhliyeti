@@ -61,6 +61,11 @@
 		7A1FB0DB2A01B92600CF20AF /* SSSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FB0D92A01B92600CF20AF /* SSSViewController.xib */; };
 		7A1FB0DF2A01BA5E00CF20AF /* SSSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB0DD2A01BA5E00CF20AF /* SSSTableViewCell.swift */; };
 		7A1FB0E02A01BA5E00CF20AF /* SSSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FB0DE2A01BA5E00CF20AF /* SSSTableViewCell.xib */; };
+		7AA0B1FC2A1A74D900ABE419 /* LevhalarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0B1FA2A1A74D900ABE419 /* LevhalarViewController.swift */; };
+		7AA0B1FD2A1A74D900ABE419 /* LevhalarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA0B1FB2A1A74D900ABE419 /* LevhalarViewController.xib */; };
+		7AA0B2012A1A767F00ABE419 /* LevhalarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0B1FF2A1A767F00ABE419 /* LevhalarCollectionViewCell.swift */; };
+		7AA0B2022A1A767F00ABE419 /* LevhalarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA0B2002A1A767F00ABE419 /* LevhalarCollectionViewCell.xib */; };
+		7AA0B2042A1A77BF00ABE419 /* LevhalarVeri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0B2032A1A77BF00ABE419 /* LevhalarVeri.swift */; };
 		7AFA2D6929F8066D00214550 /* TarafikIsaretleriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */; };
 		7AFA2D6A29F8066D00214550 /* TarafikIsaretleriViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */; };
 		7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA2D6C29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift */; };
@@ -118,6 +123,11 @@
 		7A1FB0D92A01B92600CF20AF /* SSSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SSSViewController.xib; path = SurucuEhliyeti/SSSViewController.xib; sourceTree = SOURCE_ROOT; };
 		7A1FB0DD2A01BA5E00CF20AF /* SSSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSTableViewCell.swift; sourceTree = "<group>"; };
 		7A1FB0DE2A01BA5E00CF20AF /* SSSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSSTableViewCell.xib; sourceTree = "<group>"; };
+		7AA0B1FA2A1A74D900ABE419 /* LevhalarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevhalarViewController.swift; sourceTree = "<group>"; };
+		7AA0B1FB2A1A74D900ABE419 /* LevhalarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevhalarViewController.xib; sourceTree = "<group>"; };
+		7AA0B1FF2A1A767F00ABE419 /* LevhalarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevhalarCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AA0B2002A1A767F00ABE419 /* LevhalarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevhalarCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AA0B2032A1A77BF00ABE419 /* LevhalarVeri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevhalarVeri.swift; sourceTree = "<group>"; };
 		7AFA2D6729F8066D00214550 /* TarafikIsaretleriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarafikIsaretleriViewController.swift; sourceTree = "<group>"; };
 		7AFA2D6829F8066D00214550 /* TarafikIsaretleriViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarafikIsaretleriViewController.xib; sourceTree = "<group>"; };
 		7AFA2D6C29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikIsaretleriCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +169,7 @@
 				177C2C5A29F922CE0035E47D /* BolumlerVeri.swift */,
 				7A1FB0D62A017A0900CF20AF /* SSSVeri.swift */,
 				17519A3E2A05028C00C4887A /* SinavHakkindaVeri.swift */,
+				7AA0B2032A1A77BF00ABE419 /* LevhalarVeri.swift */,
 			);
 			path = Veriler;
 			sourceTree = "<group>";
@@ -175,6 +186,7 @@
 		1706D06429E820DC002DC0F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7AA0B1FE2A1A764A00ABE419 /* LevhalarCell */,
 				7A1FB0DC2A01BA2400CF20AF /* SSSCell */,
 				177C2C6929F95BC60035E47D /* IcerikTableViewCell */,
 				7AFA2D6B29F808DE00214550 /* TrafikIsaretleriCell */,
@@ -204,6 +216,7 @@
 		1754BAED29E2C7CF00766776 /* DersNotlari */ = {
 			isa = PBXGroup;
 			children = (
+				7AA0B1F92A1A749800ABE419 /* Levhalar */,
 				1771036129EEE13700DE6E02 /* SSS */,
 				1771036029EEE12E00DE6E02 /* SinavHakkinda */,
 				1771035B29EEE10500DE6E02 /* IlkYardim */,
@@ -423,6 +436,24 @@
 			path = SSSCell;
 			sourceTree = "<group>";
 		};
+		7AA0B1F92A1A749800ABE419 /* Levhalar */ = {
+			isa = PBXGroup;
+			children = (
+				7AA0B1FA2A1A74D900ABE419 /* LevhalarViewController.swift */,
+				7AA0B1FB2A1A74D900ABE419 /* LevhalarViewController.xib */,
+			);
+			path = Levhalar;
+			sourceTree = "<group>";
+		};
+		7AA0B1FE2A1A764A00ABE419 /* LevhalarCell */ = {
+			isa = PBXGroup;
+			children = (
+				7AA0B1FF2A1A767F00ABE419 /* LevhalarCollectionViewCell.swift */,
+				7AA0B2002A1A767F00ABE419 /* LevhalarCollectionViewCell.xib */,
+			);
+			path = LevhalarCell;
+			sourceTree = "<group>";
+		};
 		7AFA2D6629F8063E00214550 /* TrafikIsaretleri */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,9 +544,11 @@
 				17984C2729E2EEA40030B5B3 /* PolisIsaretleriViewController.xib in Resources */,
 				7AFA2D6A29F8066D00214550 /* TarafikIsaretleriViewController.xib in Resources */,
 				17DC334E29ACDB6D00DD16EC /* LaunchScreen.storyboard in Resources */,
+				7AA0B1FD2A1A74D900ABE419 /* LevhalarViewController.xib in Resources */,
 				177C2C6829F9517E0035E47D /* IcerikTableViewCell.xib in Resources */,
 				1729252A29F6B4CA0051CA95 /* PopUp.xib in Resources */,
 				1754BAF129E2CE0600766776 /* GoogleService-Info.plist in Resources */,
+				7AA0B2022A1A767F00ABE419 /* LevhalarCollectionViewCell.xib in Resources */,
 				1706D05B29E81335002DC0F2 /* ProfilViewController.xib in Resources */,
 				7A1FB0E02A01BA5E00CF20AF /* SSSTableViewCell.xib in Resources */,
 				1771036629EEE3F700DE6E02 /* PolisIsaretleriCollectionViewCell.xib in Resources */,
@@ -546,6 +579,7 @@
 				177C2C5B29F922CE0035E47D /* BolumlerVeri.swift in Sources */,
 				17519A432A05513C00C4887A /* String+Ext.swift in Sources */,
 				17984C2629E2EEA40030B5B3 /* PolisIsaretleriViewController.swift in Sources */,
+				7AA0B1FC2A1A74D900ABE419 /* LevhalarViewController.swift in Sources */,
 				177C2C6329F951380035E47D /* IcerikTableViewVC.swift in Sources */,
 				17DC334229ACDB6C00DD16EC /* AppDelegate.swift in Sources */,
 				1720DA8929F6AC8F00FEB2B9 /* PopUp.swift in Sources */,
@@ -567,8 +601,10 @@
 				1706D05A29E81335002DC0F2 /* ProfilViewController.swift in Sources */,
 				7AFA2D6E29F8091900214550 /* TrafikIsaretleriCollectionViewCell.swift in Sources */,
 				17CE466529E06058002369E8 /* MyViewController.swift in Sources */,
+				7AA0B2012A1A767F00ABE419 /* LevhalarCollectionViewCell.swift in Sources */,
 				7A1FB0DF2A01BA5E00CF20AF /* SSSTableViewCell.swift in Sources */,
 				17DC636929E4C72200877988 /* DersNotlariViewController.swift in Sources */,
+				7AA0B2042A1A77BF00ABE419 /* LevhalarVeri.swift in Sources */,
 				177C2C5E29F9241A0035E47D /* IlkYardimViewController.swift in Sources */,
 				17DC334429ACDB6C00DD16EC /* SceneDelegate.swift in Sources */,
 				1796BE7029EEB6C4009E45D7 /* AGPICollectionViewCell.swift in Sources */,
